@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<meta name="ext-resource-dependency" content="https://www.musicaviva.com.au/media/0ojn3azf/music-in-my-suitcase-1600x667.jpg?width=1072">
+</head>
+<body>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#4D4FF4"/><rect x="18" y="30" width="64" height="40" fill="#FFFFFF"/><rect x="18" y="30" width="64" height="9" fill="#000000"/><rect x="24" y="47" width="40" height="3" fill="#E0E5E0"/><rect x="24" y="54" width="52" height="3" fill="#E0E5E0"/><rect x="24" y="62" width="20" height="5" fill="#F06D47"/></svg>
+</template>
+<x-dc>
+<helmet>
+  <style>/* The Future — MVA's sole brand typeface. Never substitute. */
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-MediumItalic.otf") format("opentype");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+</style>
+  <style>:root{
+--mva-white:#FFFFFF;--mva-black:#000000;--mva-grey:#E0E5E0;
+--mva-grey-95:#F4F6F4;--mva-grey-90:#ECEFEC;--mva-grey-80:#E0E5E0;--mva-grey-60:#B6BEB6;--mva-grey-40:#808780;--mva-grey-20:#44484A;
+--mva-orange:#F06D47;--mva-bronze:#A68056;--mva-indigo:#2F2C4B;--mva-pink:#F8A79D;--mva-yellow:#FFFF49;--mva-blue:#4D4FF4;
+--fg-1:var(--mva-black);--fg-2:var(--mva-grey-20);--fg-3:var(--mva-grey-40);--fg-on-dark:var(--mva-white);--fg-on-color:var(--mva-black);
+--bg-1:var(--mva-white);--bg-2:var(--mva-grey-95);--bg-3:var(--mva-grey-90);--bg-inverse:var(--mva-black);
+--border-1:var(--mva-black);--border-2:var(--mva-grey-60);--border-subtle:var(--mva-grey-90);
+--accent:var(--mva-orange);--accent-contrast:var(--mva-black);
+--link:var(--mva-black);--link-hover:var(--mva-orange);
+}
+</style>
+  <style>:root{
+--font-brand:"The Future","Helvetica Neue",Arial,sans-serif;
+--font-system:"Helvetica Neue",Arial,sans-serif;
+--font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+--fw-light:300;/* @kind other */--fw-regular:400;/* @kind other */--fw-medium:500;/* @kind other */--fw-bold:700;/* @kind other */
+--fs-12:0.75rem;--fs-14:0.875rem;--fs-16:1rem;--fs-18:1.125rem;--fs-20:1.25rem;--fs-24:1.5rem;--fs-32:2rem;--fs-40:2.5rem;--fs-56:3.5rem;--fs-72:4.5rem;--fs-96:6rem;--fs-128:8rem;
+--track-tight:-0.01em;--track-normal:0em;--track-heading:0.035em;--track-caps:0.12em;--track-caps-loose:0.2em;
+--lh-display:1.02;/* @kind other */--lh-heading:1.1;/* @kind other */--lh-body:1.5;/* @kind other */--lh-tight:1.25;/* @kind other */
+}
+</style>
+  <style>/* Spacing, radii, elevation, stave + motion tokens.
+   Corner radii are 0 by default — MVA is bold, print-like, timeless. */
+:root{
+--sp-0:0;/* @kind spacing */--sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;--sp-9:96px;--sp-10:128px;
+--radius-0:0;--radius-1:2px;--radius-pill:999px;
+--shadow-sm:0 1px 2px rgba(0,0,0,0.06);--shadow-md:0 4px 16px rgba(0,0,0,0.08);--shadow-lg:0 12px 40px rgba(0,0,0,0.12);
+--stave-weight:1px;/* @kind spacing */--stave-color:var(--mva-black);
+--ease-std:cubic-bezier(0.2,0,0,1);/* @kind other */--dur-fast:120ms;/* @kind other */--dur-med:220ms;/* @kind other */--dur-slow:400ms;/* @kind other */
+}
+/* Logo placement (guideline 3.1.6/3.1.7): PNG logo files bake in the safe-zone
+   margin as transparent padding. Place flush to top + one side edge; never add
+   extra offset. Logo width must be a whole-integer divisor of doc width
+   (1/3, 1/4, 1/5, 1/6…). Height is always auto — never drive by height. */
+</style>
+  <style>html,body{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:16px;line-height:var(--lh-body);color:var(--fg-1);background:var(--bg-1);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.mva-display,h1.mva{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:clamp(var(--fs-56),8vw,var(--fs-128));line-height:var(--lh-display);letter-spacing:var(--track-heading);text-wrap:balance}
+.mva-display--caps{text-transform:uppercase;letter-spacing:var(--track-caps-loose);font-weight:var(--fw-medium)}
+.mva-h1,h1{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:var(--fs-72);line-height:var(--lh-heading);letter-spacing:var(--track-heading);margin:0 0 var(--sp-5)}
+.mva-h2,h2{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-40);line-height:var(--lh-heading);letter-spacing:var(--track-heading);margin:0 0 var(--sp-4)}
+.mva-h3,h3{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-24);line-height:var(--lh-tight);letter-spacing:var(--track-normal);margin:0 0 var(--sp-3)}
+.mva-h4,h4{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-18);line-height:var(--lh-tight);letter-spacing:var(--track-normal);margin:0 0 var(--sp-2)}
+.mva-eyebrow{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-12);letter-spacing:var(--track-caps);text-transform:uppercase;color:var(--fg-2)}
+.mva-body,p{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:var(--fs-16);line-height:var(--lh-body);color:var(--fg-1);max-width:65ch;text-wrap:pretty}
+.mva-body--lg{font-size:var(--fs-20);line-height:1.45}
+.mva-body--sm,small{font-size:var(--fs-14);line-height:1.45}
+.mva-caption{font-size:var(--fs-12);color:var(--fg-2);line-height:1.4}
+.mva-quote{font-family:var(--font-brand);font-style:italic;font-weight:var(--fw-regular);font-size:var(--fs-32);line-height:1.25;letter-spacing:var(--track-heading)}
+.mva-stave{border:0;height:var(--stave-weight);background:var(--stave-color);margin:var(--sp-5) 0}
+.mva-stave-group{border-top:var(--stave-weight) solid var(--stave-color);border-bottom:var(--stave-weight) solid var(--stave-color)}
+.mva-stave-group>*+*{border-top:var(--stave-weight) solid var(--stave-color)}
+a{color:var(--link);text-decoration:underline;text-underline-offset:0.15em;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease-std)}
+a:hover{color:var(--link-hover)}
+.mva-caps{text-transform:uppercase;letter-spacing:var(--track-caps)}
+.mva-caps-loose{text-transform:uppercase;letter-spacing:var(--track-caps-loose)}
+.mva-italic{font-style:italic}
+*,*::before,*::after{box-sizing:border-box}
+</style>
+  <style>/* The Future — MVA's sole brand typeface. Never substitute. */
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-MediumItalic.otf") format("opentype");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"The Future";src:url("fonts/TheFuture-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+
+:root{
+--mva-white:#FFFFFF;--mva-black:#000000;--mva-grey:#E0E5E0;
+--mva-grey-95:#F4F6F4;--mva-grey-90:#ECEFEC;--mva-grey-80:#E0E5E0;--mva-grey-60:#B6BEB6;--mva-grey-40:#808780;--mva-grey-20:#44484A;
+--mva-orange:#F06D47;--mva-bronze:#A68056;--mva-indigo:#2F2C4B;--mva-pink:#F8A79D;--mva-yellow:#FFFF49;--mva-blue:#4D4FF4;
+--fg-1:var(--mva-black);--fg-2:var(--mva-grey-20);--fg-3:var(--mva-grey-40);--fg-on-dark:var(--mva-white);--fg-on-color:var(--mva-black);
+--bg-1:var(--mva-white);--bg-2:var(--mva-grey-95);--bg-3:var(--mva-grey-90);--bg-inverse:var(--mva-black);
+--border-1:var(--mva-black);--border-2:var(--mva-grey-60);--border-subtle:var(--mva-grey-90);
+--accent:var(--mva-orange);--accent-contrast:var(--mva-black);
+--link:var(--mva-black);--link-hover:var(--mva-orange);
+}
+
+:root{
+--font-brand:"The Future","Helvetica Neue",Arial,sans-serif;
+--font-system:"Helvetica Neue",Arial,sans-serif;
+--font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+--fw-light:300;/* @kind other */--fw-regular:400;/* @kind other */--fw-medium:500;/* @kind other */--fw-bold:700;/* @kind other */
+--fs-12:0.75rem;--fs-14:0.875rem;--fs-16:1rem;--fs-18:1.125rem;--fs-20:1.25rem;--fs-24:1.5rem;--fs-32:2rem;--fs-40:2.5rem;--fs-56:3.5rem;--fs-72:4.5rem;--fs-96:6rem;--fs-128:8rem;
+--track-tight:-0.01em;--track-normal:0em;--track-heading:0.035em;--track-caps:0.12em;--track-caps-loose:0.2em;
+--lh-display:1.02;/* @kind other */--lh-heading:1.1;/* @kind other */--lh-body:1.5;/* @kind other */--lh-tight:1.25;/* @kind other */
+}
+
+/* Spacing, radii, elevation, stave + motion tokens.
+   Corner radii are 0 by default — MVA is bold, print-like, timeless. */
+:root{
+--sp-0:0;/* @kind spacing */--sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;--sp-9:96px;--sp-10:128px;
+--radius-0:0;--radius-1:2px;--radius-pill:999px;
+--shadow-sm:0 1px 2px rgba(0,0,0,0.06);--shadow-md:0 4px 16px rgba(0,0,0,0.08);--shadow-lg:0 12px 40px rgba(0,0,0,0.12);
+--stave-weight:1px;/* @kind spacing */--stave-color:var(--mva-black);
+--ease-std:cubic-bezier(0.2,0,0,1);/* @kind other */--dur-fast:120ms;/* @kind other */--dur-med:220ms;/* @kind other */--dur-slow:400ms;/* @kind other */
+}
+/* Logo placement (guideline 3.1.6/3.1.7): PNG logo files bake in the safe-zone
+   margin as transparent padding. Place flush to top + one side edge; never add
+   extra offset. Logo width must be a whole-integer divisor of doc width
+   (1/3, 1/4, 1/5, 1/6…). Height is always auto — never drive by height. */
+
+html,body{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:16px;line-height:var(--lh-body);color:var(--fg-1);background:var(--bg-1);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.mva-display,h1.mva{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:clamp(var(--fs-56),8vw,var(--fs-128));line-height:var(--lh-display);letter-spacing:var(--track-heading);text-wrap:balance}
+.mva-display--caps{text-transform:uppercase;letter-spacing:var(--track-caps-loose);font-weight:var(--fw-medium)}
+.mva-h1,h1{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:var(--fs-72);line-height:var(--lh-heading);letter-spacing:var(--track-heading);margin:0 0 var(--sp-5)}
+.mva-h2,h2{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-40);line-height:var(--lh-heading);letter-spacing:var(--track-heading);margin:0 0 var(--sp-4)}
+.mva-h3,h3{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-24);line-height:var(--lh-tight);letter-spacing:var(--track-normal);margin:0 0 var(--sp-3)}
+.mva-h4,h4{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-18);line-height:var(--lh-tight);letter-spacing:var(--track-normal);margin:0 0 var(--sp-2)}
+.mva-eyebrow{font-family:var(--font-brand);font-weight:var(--fw-medium);font-size:var(--fs-12);letter-spacing:var(--track-caps);text-transform:uppercase;color:var(--fg-2)}
+.mva-body,p{font-family:var(--font-brand);font-weight:var(--fw-regular);font-size:var(--fs-16);line-height:var(--lh-body);color:var(--fg-1);max-width:65ch;text-wrap:pretty}
+.mva-body--lg{font-size:var(--fs-20);line-height:1.45}
+.mva-body--sm,small{font-size:var(--fs-14);line-height:1.45}
+.mva-caption{font-size:var(--fs-12);color:var(--fg-2);line-height:1.4}
+.mva-quote{font-family:var(--font-brand);font-style:italic;font-weight:var(--fw-regular);font-size:var(--fs-32);line-height:1.25;letter-spacing:var(--track-heading)}
+.mva-stave{border:0;height:var(--stave-weight);background:var(--stave-color);margin:var(--sp-5) 0}
+.mva-stave-group{border-top:var(--stave-weight) solid var(--stave-color);border-bottom:var(--stave-weight) solid var(--stave-color)}
+.mva-stave-group>*+*{border-top:var(--stave-weight) solid var(--stave-color)}
+a{color:var(--link);text-decoration:underline;text-underline-offset:0.15em;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease-std)}
+a:hover{color:var(--link-hover)}
+.mva-caps{text-transform:uppercase;letter-spacing:var(--track-caps)}
+.mva-caps-loose{text-transform:uppercase;letter-spacing:var(--track-caps-loose)}
+.mva-italic{font-style:italic}
+*,*::before,*::after{box-sizing:border-box}
+
+</style>
+  <script src="mva-design-system.js"></script>
+  <style>
+    body { margin: 0; }
+    a { color: #2F2C4B; }
+    a:hover { color: #F06D47; }
+  </style>
+</helmet>
+
+<div style="background:#F5F5F0;min-height:100vh;font-family:'The Future',Arial,Helvetica,sans-serif;">
+
+  <div style="background:#000000;padding:24px 40px 0 40px;">
+    <div style="max-width:1000px;margin:0 auto;">
+      <div style="color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;">Musica Viva Australia In Schools</div>
+      <div style="color:#FFFFFF;font-size:24px;font-weight:700;margin-top:6px;">2027 Customer Care Outreach — state email templates</div>
+      <div style="color:#E0E5E0;font-size:13px;margin-top:8px;line-height:1.6;">Outlook-ready. Shows, tour dates, touring areas and state team details are wired in. Only the highlighted fields are typed per school.</div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;">
+        <sc-for list="{{ stateTabs }}" as="tab" hint-placeholder-count="8">
+          <button sc-camel-on-click="{{ tab.select }}" style="background:{{ tab.bg }};color:{{ tab.fg }};border:1px solid #FFFFFF;padding:9px 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:0.04em;cursor:pointer;">{{ tab.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;padding-bottom:22px;">
+        <sc-for list="{{ templateTabs }}" as="tab" hint-placeholder-count="4">
+          <button sc-camel-on-click="{{ tab.select }}" style="background:{{ tab.bg }};color:{{ tab.fg }};border:1px solid #4D4FF4;padding:9px 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;cursor:pointer;">{{ tab.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1000px;margin:0 auto;padding:24px 40px 100px 40px;">
+
+    <div style="border:1px solid #000000;background:#FFFFFF;padding:16px 20px;margin-bottom:20px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.9;color:#1A1A1A;">
+      <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;">
+        <sc-if value="{{ hasRegionPicker }}" hint-placeholder-val="{{ false }}">
+          <label style="display:flex;align-items:center;gap:8px;font-weight:700;">Touring area
+            <sc-raw-select sc-camel-on-change="{{ setRegion }}" value="{{ regionName }}" style="border:1px solid #000000;padding:6px 8px;font-family:Arial,Helvetica,sans-serif;font-size:13px;">
+              <sc-for list="{{ regionOptions }}" as="r" hint-placeholder-count="5">
+                <option value="{{ r.name }}">{{ r.name }}</option>
+              </sc-for>
+            </sc-raw-select>
+          </label>
+        </sc-if>
+        <sc-if value="{{ hasOpeningPicker }}" hint-placeholder-val="{{ true }}">
+          <label style="display:flex;align-items:center;gap:8px;font-weight:700;">Opening
+            <sc-raw-select sc-camel-on-change="{{ setOpening }}" value="{{ opening }}" style="border:1px solid #000000;padding:6px 8px;font-family:Arial,Helvetica,sans-serif;font-size:13px;">
+              <option value="A">A — left a message</option>
+              <option value="B">B — post-call, whole program</option>
+              <option value="C">C — post-call, discussed a show</option>
+            </sc-raw-select>
+          </label>
+        </sc-if>
+        <sc-if value="{{ showEqualMusicToggle }}" hint-placeholder-val="{{ true }}">
+        <button type="button" sc-camel-on-click="{{ toggleEqualMusic }}" style="border:1px solid #000000;background-color:{{ equalMusicBg }};color:{{ equalMusicFg }};font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:7px 12px;cursor:pointer;">Equal Music paragraph: {{ equalMusicLabel }}{{ equalMusicNote }}</button>
+        </sc-if>
+        <sc-if value="{{ showBookingHelpToggle }}" hint-placeholder-val="{{ true }}">
+        <button type="button" sc-camel-on-click="{{ toggleBookingHelp }}" style="border:1px solid #000000;background-color:{{ bookingHelpBg }};color:#000000;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:7px 12px;cursor:pointer;">“Help make life easier”: {{ bookingHelpLabel }}</button>
+        </sc-if>
+        <span style="color:#6b6b6b;">Fill the details below — anything you type loses its yellow highlight, so the email lands in Outlook ready to send. Add SOLD OUT to a date line where a week has gone.</span>
+      </div>
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid #E0E5E0;">
+        <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;">
+          <sc-if value="{{ hasSchoolList }}" hint-placeholder-val="{{ false }}">
+            <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;">School — Met North list
+              <sc-raw-select sc-camel-on-change="{{ pickSchool }}" value="{{ pickedSchool }}" style="border:1px solid #000000;padding:7px 9px;font-family:Arial,Helvetica,sans-serif;font-size:13px;max-width:330px;">
+                <option value="">Choose a school…</option>
+                <sc-for list="{{ schoolList }}" as="s" hint-placeholder-count="0">
+                  <option value="{{ s.name }}">{{ s.label }}</option>
+                </sc-for>
+              </sc-raw-select>
+            </label>
+          </sc-if>
+          <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;">School name
+            <input type="text" value="{{ schoolName }}" sc-camel-on-change="{{ setSchoolName }}" placeholder="SCHOOL NAME" style="border:1px solid #000000;padding:7px 9px;font-family:Arial,Helvetica,sans-serif;font-size:13px;width:230px;">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;">Contact first name
+            <input type="text" value="{{ contactName }}" sc-camel-on-change="{{ setContactName }}" placeholder="NAME" style="border:1px solid #000000;padding:7px 9px;font-family:Arial,Helvetica,sans-serif;font-size:13px;width:170px;">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;">Your name
+            <input type="text" value="{{ callerName }}" sc-camel-on-change="{{ setCallerName }}" placeholder="CALLER NAME" style="border:1px solid #000000;padding:7px 9px;font-family:Arial,Helvetica,sans-serif;font-size:13px;width:170px;">
+          </label>
+          <sc-for list="{{ weekFields }}" as="wk" hint-placeholder-count="0">
+            <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;">Week — {{ wk.label }}
+              <input type="text" value="{{ wk.value }}" sc-camel-on-change="{{ wk.onInput }}" placeholder="00" style="border:1px solid #000000;padding:7px 9px;font-family:Arial,Helvetica,sans-serif;font-size:13px;width:90px;">
+            </label>
+          </sc-for>
+          <button type="button" sc-camel-on-click="{{ clearFields }}" style="border:1px solid #000000;background:#FFFFFF;color:#000000;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;padding:7px 12px;cursor:pointer;">Clear for next school</button>
+        </div>
+        <sc-if value="{{ hasPickedSchool }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:10px;padding:10px 12px;background:#FFFFFF;border:1px solid #000000;">
+            <strong>{{ pickedSchool }}</strong> — {{ pickedMeta }}<br>Send to: <a href="{{ pickedMailto }}">{{ pickedEmail }}</a> &nbsp;/&nbsp; {{ pickedRole }}: {{ pickedContact }}
+          </div>
+        </sc-if>
+        <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;">
+          <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;flex:1 1 420px;min-width:0;">Add your own note (optional)
+            <textarea value="{{ customNote }}" sc-camel-on-change="{{ setCustomNote }}" placeholder="e.g. Great to chat with you this morning — as promised, here are the details." style="border:1px solid #000000;padding:8px 10px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;min-height:70px;resize:vertical;width:100%;"></textarea>
+            <span style="font-weight:400;color:#6b6b6b;">Template text stays as is — this is added in. A blank line starts a new paragraph.</span>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:5px;font-weight:700;">Place it
+            <sc-raw-select sc-camel-on-change="{{ setNotePos }}" value="{{ notePos }}" style="border:1px solid #000000;padding:7px 9px;font-family:Arial,Helvetica,sans-serif;font-size:13px;">
+              <option value="top">After the opening</option>
+              <option value="bottom">Before sign-off</option>
+            </sc-raw-select>
+          </label>
+        </div>
+        <div style="margin-top:10px;color:#6b6b6b;">Your name is remembered for next time. Anything still yellow when you copy needs typing over in Outlook.</div>
+      </div>
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid #E0E5E0;"><strong>Subject line:</strong> {{ subjectLine }}</div>
+      <sc-if value="{{ isPre }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:14px;padding:12px 14px;background:#FFFF49;color:#000000;">Video thumbnail: this image is hosted on musicaviva.com.au, so it renders in Outlook. To use the video’s own opening frame instead, have that still uploaded to the site and I will point the card at it.</div>
+      </sc-if>
+      <div style="margin-top:14px;padding-top:14px;border-top:1px solid #E0E5E0;color:#6b6b6b;">The headers and show photos are wired to their live musicaviva.com.au URLs — copied and downloaded emails carry those, not the preview file paths.</div>
+    </div>
+
+    <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px;">
+      <h2 style="font-size:19px;font-weight:700;margin:0;color:#000000;">{{ emailTitle }}</h2>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button sc-camel-on-click="{{ toggleSource }}" style="background:#FFFFFF;color:#000000;border:1px solid #000000;padding:10px 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;cursor:pointer;">{{ sourceToggleLabel }}</button>
+        <button sc-camel-on-click="{{ downloadHtml }}" style="background:#FFFFFF;color:#000000;border:1px solid #000000;padding:10px 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;cursor:pointer;">Download .html</button>
+        <button sc-camel-on-click="{{ copyEmail }}" style="background:#000000;color:#FFFFFF;border:none;padding:10px 20px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;cursor:pointer;">{{ copyLabel }}</button>
+      </div>
+    </div>
+
+    <sc-if value="{{ showSource }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid #000000;background:#FFFFFF;padding:14px;margin-bottom:16px;">
+        <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#6b6b6b;margin-bottom:8px;">Click inside to select all, then Ctrl+C. Paste into an .html file, or into Outlook's HTML source if you use an editor add-in.</div>
+        <textarea readonly="" sc-camel-on-focus="{{ selectSource }}" sc-camel-on-click="{{ selectSource }}" value="{{ sourceHtml }}" style="width:100%;height:220px;font-family:'Courier New',monospace;font-size:11px;line-height:1.5;border:1px solid #E0E5E0;padding:10px;resize:vertical;"></textarea>
+      </div>
+    </sc-if>
+
+    <div style="background-color:#E0E5E0;padding:20px 12px 36px 12px;">
+      <sc-raw-table ref="{{ setRefEmail }}" role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="om-w" style="width:100%;max-width:600px;background-color:#FFFFFF;margin:0 auto;border-collapse:collapse;">
+        <sc-raw-tr><sc-raw-td style="background-color:#4D4FF4;padding:0;font-size:0;line-height:0;"><sc-if value="{{ isDiverse }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/header-explore-2027.png" data-file="header-explore-2027.png" data-file="header-explore-2027.png" width="600" alt="{{ headerAlt }}" style="display:block;width:100%;max-width:600px;height:auto;border:0;"></sc-if><sc-if value="{{ notDiverse }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/header-bookings-open.png" data-file="header-bookings-open.png" data-file="header-bookings-open.png" width="600" alt="{{ headerAlt }}" style="display:block;width:100%;max-width:600px;height:auto;border:0;"></sc-if></sc-raw-td></sc-raw-tr>
+
+        <sc-raw-tr><sc-raw-td style="padding:30px 32px 0 32px;" class="om-pad">
+          <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:24px;mso-line-height-rule:exactly;color:#000000;font-weight:bold;"><span style="background-color:{{ schoolBg }};color:#000000;">{{ schoolText }}</span></p>
+          <p style="margin:0 0 20px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#000000;">{{ salutation }} <span style="background-color:{{ contactBg }};color:#000000;">{{ contactText }}</span>,</p>
+        </sc-raw-td></sc-raw-tr>
+
+        <sc-raw-tr><sc-raw-td style="padding:0 32px;" class="om-pad">
+          <p style="margin:0 0 18px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">{{ para1Pre }}<span style="background-color:{{ schoolBg }};color:#000000;">{{ schoolText }}</span>{{ para1Post }}</p>
+          <sc-if value="{{ hasPara2 }}" hint-placeholder-val="{{ true }}">
+            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">{{ para2 }}</p>
+          </sc-if>
+          <sc-if value="{{ hasPara3 }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:18px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">{{ para3 }}</p>
+          </sc-if>
+          <sc-if value="{{ equalMusicOn }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:{{ equalMusicTop }} 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">Schools in the region can access significant financial support through our Equal Music program. See our <a href="https://www.musicaviva.com.au/education/important-information/pricing/" style="color:#B33F17;">Pricing &amp; Financial Assistance</a> page for more information, or contact the State team to discuss your school’s needs.</p>
+          </sc-if>
+          <sc-for list="{{ noteTop }}" as="np" hint-placeholder-count="0">
+            <p style="margin:18px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">{{ np.text }}</p>
+          </sc-for>
+        </sc-raw-td></sc-raw-tr>
+
+        <sc-if value="{{ showVideo }}" hint-placeholder-val="{{ false }}">
+          <sc-raw-tr><sc-raw-td style="padding:22px 32px 0 32px;" class="om-pad">
+            <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">In the meantime, here’s a look at a Musica Viva Australia In Schools visit:</p>
+            <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;margin:0;">
+              <sc-raw-tr><sc-raw-td style="padding:0;font-size:0;line-height:0;"><a href="https://www.musicaviva.com.au/education/2027-program/" target="_blank" style="display:block;text-decoration:none;"><img src="assets/e27/mvais-2027-video.jpg" data-file="mvais-2027-video.jpg" width="536" alt="Watch: Musica Viva Australia In Schools 2027" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></a></sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td bgcolor="#F06D47" style="background-color:#F06D47;padding:14px 18px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;mso-line-height-rule:exactly;"><a href="https://www.musicaviva.com.au/education/2027-program/" target="_blank" style="color:#000000;text-decoration:none;font-weight:bold;">Watch the video &nbsp;&rsaquo;</a></sc-raw-td></sc-raw-tr>
+            </sc-raw-table>
+          </sc-raw-td></sc-raw-tr>
+        </sc-if>
+
+        <sc-if value="{{ isDiverse }}" hint-placeholder-val="{{ false }}">
+          <sc-raw-tr><sc-raw-td style="padding:18px 32px 0 32px;" class="om-pad">
+            <p style="margin:0 0 18px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">Our Accessible Music Education program won the 2025 Excellence in Music Education APRA AMCOS Art Music Award. Watch how we support students of all abilities:</p>
+            <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;margin:0 0 18px 0;">
+              <sc-raw-tr><sc-raw-td style="padding:0;font-size:0;line-height:0;"><a href="https://www.musicaviva.com.au/education/music-education-residencies/#EdResidency" target="_blank" style="display:block;text-decoration:none;"><img src="assets/e27/mvais-2027-video.jpg" data-file="residency.jpg" width="536" alt="Watch: Musica Viva Australia Music Education Residency Program" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></a></sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td bgcolor="#000000" style="background-color:#000000;padding:14px 18px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;mso-line-height-rule:exactly;"><a href="https://www.musicaviva.com.au/education/music-education-residencies/#EdResidency" target="_blank" style="color:#FFFFFF;text-decoration:none;font-weight:bold;">Watch the video &nbsp;&rsaquo;</a></sc-raw-td></sc-raw-tr>
+            </sc-raw-table>
+            <p style="margin:0 0 10px 0;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:24px;mso-line-height-rule:exactly;color:#000000;font-weight:bold;">Every booking includes</p>
+            <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#2F2C4B;">
+              <sc-raw-tr><sc-raw-td style="padding:10px 0;border-top:1px solid #000000;">A live, interactive in-school show</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:10px 0;border-top:1px solid #000000;">Schoolwide access to our Education Resource Platform, including curriculum-aligned activities, audio-transcribed video content, concert guides and Visual Stories</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:10px 0;border-top:1px solid #000000;">A free Professional Development webinar</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:10px 0;border-top:1px solid #000000;border-bottom:1px solid #000000;">Support to plan your booking and adapt the show to your students’ needs</sc-raw-td></sc-raw-tr>
+            </sc-raw-table>
+            <p style="margin:20px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">{{ diverseSuggestion }}</p>
+            <p style="margin:16px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">To talk through which shows suit your students’ needs, call us on <strong>1300 663 608</strong> or reply to this email and we will plan the visit together.</p>
+            <p style="margin:26px 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:28px;mso-line-height-rule:exactly;letter-spacing:0.03em;color:#000000;font-weight:bold;">Simple pricing and access</p>
+            <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#000000;">
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;">$10.50 per student, GST free. All teachers attend free.</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;border-bottom:1px solid #000000;">Financial assistance is available through our Equal Music program for low ICSEA and small schools, and for students facing financial or geographical barriers. See our <a href="https://www.musicaviva.com.au/education/important-information/pricing/" style="color:#B33F17;font-weight:bold;text-decoration:underline;">Pricing &amp; Financial Assistance page</a>, and contact your State Education team on <strong>1300 663 608</strong>.</sc-raw-td></sc-raw-tr>
+            </sc-raw-table>
+          </sc-raw-td></sc-raw-tr>
+        </sc-if>
+
+        <sc-if value="{{ hasShows }}" hint-placeholder-val="{{ true }}">
+          <sc-for list="{{ shows }}" as="show" hint-placeholder-count="0">
+            <sc-raw-tr><sc-raw-td style="padding:26px 32px 0 32px;" class="om-pad">
+              <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
+                <sc-raw-tr><sc-raw-td style="border-top:1px solid #000000;font-size:0;line-height:0;">&nbsp;</sc-raw-td></sc-raw-tr>
+                <sc-raw-tr><sc-raw-td style="padding:0;font-size:0;line-height:0;"><sc-if value="{{ show.is_elcamino }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/elcamino.jpg" data-file="elcamino.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_imagination }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/imagination.jpg" data-file="imagination.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_world }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/world.jpg" data-file="world.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_grooves }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/grooves.jpg" data-file="grooves.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_wyniss }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/wyniss.jpg" data-file="wyniss.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_gameday }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/gameday.jpg" data-file="gameday.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_life }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/life.jpg" data-file="life.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_suitcase }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/suitcase.jpg" data-file="suitcase.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_roots }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/roots-banner.png" data-file="roots.jpg" data-file="roots.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_lost }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/lost.jpg" data-file="lost.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_wireless }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/wireless.jpg" data-file="wireless.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_moonradio }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/moonradio.jpg" data-file="moonradio.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_rhythmworks }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/rhythmworks.jpg" data-file="rhythmworks.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if><sc-if value="{{ show.is_water }}" hint-placeholder-val="{{ false }}"><img src="assets/e27/water.jpg" data-file="water.jpg" width="536" alt="{{ show.imgAlt }}" style="display:block;width:100%;max-width:536px;height:auto;border:0;"></sc-if></sc-raw-td></sc-raw-tr>
+                <sc-raw-tr><sc-raw-td style="padding:16px 0 0 0;font-family:Arial,Helvetica,sans-serif;">
+                  <p style="margin:0 0 6px 0;font-size:24px;line-height:30px;mso-line-height-rule:exactly;letter-spacing:0.03em;color:#000000;font-weight:bold;">{{ show.title }}<sc-if value="{{ show.isNew }}" hint-placeholder-val="{{ false }}"> <span style="font-size:12px;letter-spacing:0.14em;color:#FFFFFF;background-color:#F06D47;padding:3px 8px;">NEW</span></sc-if></p>
+                  <p style="margin:0 0 10px 0;font-size:14px;line-height:20px;mso-line-height-rule:exactly;letter-spacing:0.06em;text-transform:uppercase;color:#2F2C4B;">{{ show.dates }}<sc-if value="{{ show.needsWeek }}" hint-placeholder-val="{{ false }}"> &nbsp;/&nbsp; Week <span style="background-color:{{ show.weekBg }};color:#000000;">{{ show.weekText }}</span></sc-if></p>
+                  <p style="margin:0 0 4px 0;font-size:17px;line-height:24px;mso-line-height-rule:exactly;color:#000000;">{{ show.tagline }}</p>
+                  <p style="margin:0 0 16px 0;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#2F2C4B;">{{ show.desc }}</p>
+                  <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0"><sc-raw-tr><sc-raw-td bgcolor="#4D4FF4" align="center" style="background-color:#4D4FF4;padding:12px 22px;"><a href="{{ show.url }}" target="_blank" style="display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:16px;mso-line-height-rule:exactly;letter-spacing:0.1em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;font-weight:bold;"><span style="color:#FFFFFF;text-decoration:none;">More about this show</span></a></sc-raw-td></sc-raw-tr></sc-raw-table>
+                </sc-raw-td></sc-raw-tr>
+              </sc-raw-table>
+            </sc-raw-td></sc-raw-tr>
+          </sc-for>
+
+          <sc-raw-tr><sc-raw-td style="padding:26px 32px 0 32px;" class="om-pad"><sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;"><sc-raw-tr><sc-raw-td style="border-bottom:1px solid #000000;font-size:0;line-height:0;">&nbsp;</sc-raw-td></sc-raw-tr></sc-raw-table></sc-raw-td></sc-raw-tr>
+
+          <sc-raw-tr><sc-raw-td style="padding:30px 32px 0 32px;" class="om-pad">
+            <p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:26px;line-height:32px;mso-line-height-rule:exactly;letter-spacing:0.03em;color:#000000;font-weight:bold;" class="om-h1">FAQs</p>
+            <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#000000;">
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;"><strong>Where?</strong> We come to your school!</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;"><strong>When?</strong> See the tour dates above. We’ll do our best to accommodate your preferences.</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;"><strong>What?</strong> Your 2027 program includes a live 50 to 60-minute show, at least a term’s worth of curriculum-aligned digital learning resources, and a Professional Development webinar.</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;"><strong>How much?</strong> {{ priceLine }} All teachers attend free.<sc-if value="{{ isAssisted }}" hint-placeholder-val="{{ false }}"><br><br>Musica Viva Australia is able to offer financial assistance to schools in need through our Equal Music program. Support is available for low ICSEA and small schools, and for students facing financial or geographical barriers that would otherwise prohibit them from participating.</sc-if><br><br>See our <a href="https://www.musicaviva.com.au/education/important-information/pricing/" style="color:#B33F17;font-weight:bold;text-decoration:underline;">Pricing &amp; Financial Assistance page</a> for more information{{ pricingContactTail }}</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;"><strong>How many per performance?</strong> Minimum 150 students, maximum 300 students. Schools with more than 300 students can hold multiple performances.</sc-raw-td></sc-raw-tr>
+              <sc-raw-tr><sc-raw-td style="padding:12px 0;border-top:1px solid #000000;border-bottom:1px solid #000000;"><strong>Program suitability?</strong> Suitable for students of all abilities up to Year 8.</sc-raw-td></sc-raw-tr>
+            </sc-raw-table>
+            <p style="margin:12px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:19px;mso-line-height-rule:exactly;color:#2F2C4B;">*An exemption to the minimum student numbers may be available for small schools.</p>
+          </sc-raw-td></sc-raw-tr>
+        </sc-if>
+
+        <sc-if value="{{ showPreStave }}" hint-placeholder-val="{{ false }}">
+          <sc-raw-tr><sc-raw-td style="padding:26px 32px 0 32px;" class="om-pad"><sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;"><sc-raw-tr><sc-raw-td style="border-top:1px solid #000000;font-size:0;line-height:0;">&nbsp;</sc-raw-td></sc-raw-tr></sc-raw-table></sc-raw-td></sc-raw-tr>
+        </sc-if>
+        <sc-if value="{{ showCtas }}" hint-placeholder-val="{{ true }}">
+        <sc-raw-tr><sc-raw-td style="padding:28px 32px 0 32px;" class="om-pad">
+          <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" class="om-btn-row"><sc-raw-tr>
+            <sc-raw-td bgcolor="#F06D47" align="center" style="background-color:#F06D47;padding:16px 30px;"><a href="https://www.musicaviva.com.au/booking-online/" target="_blank" style="display:block;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:17px;mso-line-height-rule:exactly;letter-spacing:0.12em;text-transform:uppercase;color:#000000;text-decoration:none;font-weight:bold;"><span style="color:#000000;text-decoration:none;">Book online</span></a></sc-raw-td>
+            <sc-raw-td width="12" class="om-btn-gap" style="width:12px;font-size:0;line-height:0;">&nbsp;</sc-raw-td>
+            <sc-raw-td bgcolor="#4D4FF4" align="center" style="background-color:#4D4FF4;padding:16px 30px;"><a href="https://www.musicaviva.com.au/education/2027-program/" target="_blank" style="display:block;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:17px;mso-line-height-rule:exactly;letter-spacing:0.12em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;font-weight:bold;"><span style="color:#FFFFFF;text-decoration:none;">2027 program</span></a></sc-raw-td>
+          </sc-raw-tr></sc-raw-table>
+        </sc-raw-td></sc-raw-tr>
+        </sc-if>
+
+        <sc-if value="{{ showCtas }}" hint-placeholder-val="{{ true }}">
+        <sc-raw-tr><sc-raw-td style="padding:22px 32px 0 32px;" class="om-pad">
+          <p style="margin:0 0 22px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">If you have any questions, please reply by return email, or call us on <strong>1300 663 608</strong>. Head to our <a href="https://www.musicaviva.com.au/education/2027-program/" style="color:#B33F17;font-weight:bold;text-decoration:underline;">2027 Education page</a> to find out more about Musica Viva Australia In Schools.</p>
+          <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;"><sc-raw-tr><sc-raw-td style="border-top:1px solid #000000;font-size:0;line-height:0;">&nbsp;</sc-raw-td></sc-raw-tr></sc-raw-table>
+        </sc-raw-td></sc-raw-tr>
+        </sc-if>
+
+        <sc-if value="{{ bookingHelpOn }}" hint-placeholder-val="{{ false }}">
+          <sc-raw-tr><sc-raw-td style="padding:22px 32px 0 32px;" class="om-pad">
+            <p style="margin:0 0 6px 0;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:24px;mso-line-height-rule:exactly;color:#000000;font-weight:bold;">To help make life easier</p>
+            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">Just reply with your preferred show, any date preferences or dates to avoid, and a rough estimate of student numbers, and we’ll fill out the booking form for you on our end.</p>
+          </sc-raw-td></sc-raw-tr>
+        </sc-if>
+        <sc-raw-tr><sc-raw-td style="padding:22px 32px 34px 32px;" class="om-pad">
+          <sc-for list="{{ noteBottom }}" as="np" hint-placeholder-count="0">
+            <p style="margin:0 0 18px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">{{ np.text }}</p>
+          </sc-for>
+          <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#000000;">Best wishes,</p>
+          <p style="margin:0 0 2px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#000000;font-weight:bold;"><span style="background-color:{{ callerBg }};color:#000000;">{{ callerText }}</span></p>
+          <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;mso-line-height-rule:exactly;color:#2F2C4B;">Customer Care</p>
+          <p style="margin:0 0 6px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;mso-line-height-rule:exactly;color:#000000;font-weight:bold;">On behalf of the {{ stateCode }} State Education Team</p>
+          <sc-raw-table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;mso-line-height-rule:exactly;color:#2F2C4B;">
+            <sc-for list="{{ teamLines }}" as="line" hint-placeholder-count="3">
+              <sc-raw-tr><sc-raw-td style="padding:7px 0;border-top:1px solid #E0E5E0;"><span style="background-color:{{ line.bg }};color:{{ line.fg }};font-weight:{{ line.weight }};">{{ line.text }}</span></sc-raw-td></sc-raw-tr>
+            </sc-for>
+          </sc-raw-table>
+        </sc-raw-td></sc-raw-tr>
+
+        <sc-raw-tr><sc-raw-td style="background-color:#000000;padding:26px 32px;" class="om-pad">
+          <p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;mso-line-height-rule:exactly;letter-spacing:0.1em;text-transform:uppercase;"><a href="https://www.musicaviva.com.au/our-story/access-equity-and-inclusion/" style="color:#FFFFFF;text-decoration:none;">Access, Equity &amp; Inclusion</a><span style="color:#A68056;">&nbsp;/&nbsp;</span><a href="https://www.musicaviva.com.au/our-story/contact-us/" style="color:#FFFFFF;text-decoration:none;">Contact us</a></p>
+          <p style="margin:0 0 14px 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;mso-line-height-rule:exactly;color:#E0E5E0;">{{ officeLine }} &nbsp;/&nbsp; 1300 663 608</p>
+          <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;mso-line-height-rule:exactly;color:#A68056;">Musica Viva Australia acknowledges the Traditional Custodians of the many lands on which we meet, work and live, and pays respect to Elders past, present and emerging — people who have sung their songs, danced their dances and told their stories on these lands for thousands of generations.</p>
+        </sc-raw-td></sc-raw-tr>
+      </sc-raw-table>
+    </div>
+
+    <div style="margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#6b6b6b;line-height:1.7;max-width:600px;">
+      Every image is already pointed at its live musicaviva.com.au URL, so copied and downloaded emails render without further edits. Delete any show block not touring the school, set the week numbers, and clear the yellow highlights before sending.
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1000, &quot;height&quot;: 900}}">
+const CATALOG = {
+  elcamino: { title: 'El Camino', tagline: 'A journey into culture and music', desc: 'Celebrate the power of music to unite and inspire us all.', url: 'https://www.musicaviva.com.au/elcamino' },
+  imagination: { title: 'Imagination Exploration', tagline: 'The creative joy of improvisation', desc: 'A journey into musical imagination.', url: 'https://www.musicaviva.com.au/imagination' },
+  world: { title: 'Music of the World', tagline: 'An exhilarating experience', desc: 'Discover the joy of music from around the world.', url: 'https://www.musicaviva.com.au/world' },
+  grooves: { title: 'Power Grooves', tagline: 'A journey through rhythm', desc: 'Hear, feel and create music inspired by the sounds of everyday life.', url: 'https://www.musicaviva.com.au/grooves' },
+  wyniss: { title: 'Wyniss', tagline: 'Torres Strait song and dance', desc: 'Understand how culture and history are passed on through song, dance, and childhood games.', url: 'https://www.musicaviva.com.au/wyniss' },
+  gameday: { title: 'Game Day!', tagline: 'Music and teamwork', desc: 'Teamwork makes the dream work in this exploration of sports and music.', url: 'https://www.musicaviva.com.au/gameday' },
+  life: { title: 'Life is an Echo', tagline: 'Space, stillness, and shared music', desc: 'Exploring Asian cultural traditions through music and mindful listening.', url: 'https://www.musicaviva.com.au/life' },
+  suitcase: { title: 'Music in my Suitcase', tagline: 'Celebrate your cultures', desc: 'Explore how music can be a powerful means to share language and history.', url: 'https://www.musicaviva.com.au/suitcase' },
+  roots: { title: 'Back to the Roots', tagline: 'Where cultures connect', desc: 'Discover music shaped by culture, identity and creativity', url: 'https://www.musicaviva.com.au/roots' },
+  lost: { title: 'Lost Histories', tagline: 'Self-discovery through music', desc: 'Engage with history and place through the songs of Troy Russell, a Birpai and Gamillaroi musician and composer.', url: 'https://www.musicaviva.com.au/lost' },
+  wireless: { title: 'On the Wireless', tagline: 'We’re on air!', desc: 'Tune in to the golden age of radio', url: 'https://www.musicaviva.com.au/wireless' },
+  moonradio: { title: 'Moon Radio Hour', tagline: 'Playing with the unexpected', desc: 'Go where no one has gone before with the intrepid members of Moon Radio Hour.', url: 'https://www.musicaviva.com.au/moonradio' },
+  rhythmworks: { title: 'Rhythm Works', tagline: 'Creating with percussion', desc: 'Discover how music can be used to conjure up strong visual images with this dynamic percussion duo.', url: 'https://www.musicaviva.com.au/rhythmworks' },
+  water: { title: 'Water Rhythms', tagline: 'Rhythm, water and movement', desc: 'Go with the flow and move with the music.', url: 'https://www.musicaviva.com.au/water' },
+};
+
+// Live URLs on musicaviva.com.au. Anything missing falls back to the URL panel.
+// PENDING: these three are not yet in the public media library. Until they are,
+// exports keep the local filename so the caller can see what is missing rather
+// than shipping a fabricated hostname.
+const NOT_YET_HOSTED = [];
+const HOSTED = {
+  'roots.jpg': 'https://www.musicaviva.com.au/media/pyrnzffp/back-to-the-roots-1600x667.jpg?width=1072',
+  'mvais-2027-video.jpg': 'https://www.musicaviva.com.au/media/tr5jicmx/240619-mvais-ashcroft-ps-tim-hansen-nsw-toby-zerna-6714-web.jpg?width=536',
+  'residency.jpg': 'https://www.musicaviva.com.au/media/tr5jicmx/240619-mvais-ashcroft-ps-tim-hansen-nsw-toby-zerna-6714-web.jpg?width=536',
+  'header-explore-2027.png': 'https://www.musicaviva.com.au/media/mt2bcinr/mva-in-schools-2027-edm-header_1244x533px-03.png?width=1200',
+  'header-bookings-open.png': 'https://www.musicaviva.com.au/media/aerpoz0w/mva-in-schools-2027-edm-header_1244x533px-02.png?width=1200',
+  'elcamino.jpg': 'https://www.musicaviva.com.au/media/3xchemai/el-camino-1600x667.jpg?width=1072&v=1dbfcfe0480bc40',
+  'gameday.jpg': 'https://www.musicaviva.com.au/media/id0fm1cj/game-day-1600x667.jpg?width=1072&v=1dbfcfe058ab230',
+  'imagination.jpg': 'https://www.musicaviva.com.au/media/v2pl0vgl/imagination-exploration-1600x667.jpg?width=1072&v=1dbfcfe088a3690',
+  'life.jpg': 'https://www.musicaviva.com.au/media/x0hlj5n5/life-is-an-echo-1600x667.jpg?width=1072&v=1dbfcfe0925da50',
+  'lost.jpg': 'https://www.musicaviva.com.au/media/1lsnvtg0/lost-histories-1600x667.jpg?width=1072&v=1dbfd00047e3950',
+  'moonradio.jpg': 'https://www.musicaviva.com.au/media/wzddin0a/moon-radio-hour-1600x667.jpg?width=1072&v=1dbfcfe07665000',
+  'suitcase.jpg': 'https://www.musicaviva.com.au/media/0ojn3azf/music-in-my-suitcase-1600x667.jpg?width=1072',
+  'world.jpg': 'https://www.musicaviva.com.au/media/y4ghadvo/music-of-the-world-1600x667.jpg?width=1072&v=1dbfcfe05421070',
+  'wireless.jpg': 'https://www.musicaviva.com.au/media/py0apfab/on-the-wireless-1600x667.jpg?width=1072&v=1dbfcfe040fd200',
+  'grooves.jpg': 'https://www.musicaviva.com.au/media/ccgmg0fs/power-grooves-1600x667.jpg?width=1072&v=1dd1a731eca0460',
+  'rhythmworks.jpg': 'https://www.musicaviva.com.au/media/cquhip1a/rhythm-works-1600x667.jpg?width=1072&v=1dbfcfe06f67730',
+  'water.jpg': 'https://www.musicaviva.com.au/media/bmggmlh3/water-rhythms-1600x667.jpg?width=1072&v=1dbfcfe062f0880',
+  'wyniss.jpg': 'https://www.musicaviva.com.au/media/d12n5gxd/wyniss-1600x667.jpg?width=1072&v=1dbfcfe07a2e3d0',
+};
+
+const STATES = {
+  "NSW": {
+    "code": "NSW",
+    "primary": "Sydney East & City",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "suitcase",
+        "dateline": "2 Jun, 8–9 Jun & 15–16 Jun | Term 2, Weeks 6–8",
+        "isNew": false
+      },
+      {
+        "slug": "gameday",
+        "dateline": "7–11 Jun | Term 2, Week 7",
+        "isNew": false
+      },
+      {
+        "slug": "roots",
+        "dateline": "26 Jul–2 Aug & 5–6 Aug | Term 3, Weeks 2–3",
+        "isNew": true
+      },
+      {
+        "slug": "wireless",
+        "dateline": "30–31 Aug (T3, Week 7) & 20–22 Oct (T4, Week 2)",
+        "isNew": false
+      },
+      {
+        "slug": "lost",
+        "dateline": "1–3 Nov | Term 4, Week 4",
+        "isNew": false
+      }
+    ],
+    "regions": [
+      {
+        "name": "Sydney North & Central Coast",
+        "shows": [
+          {
+            "slug": "rhythmworks",
+            "dateline": "13–19 May | Term 2, Weeks 3–4",
+            "isNew": false
+          },
+          {
+            "slug": "grooves",
+            "dateline": "7–11 Jun | Term 2, Week 7",
+            "isNew": true
+          },
+          {
+            "slug": "moonradio",
+            "dateline": "7–9 Sep & 15–16 Sep | Term 3, Weeks 8–9",
+            "isNew": false
+          },
+          {
+            "slug": "life",
+            "dateline": "20–22 Oct | Term 4, Week 2",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Greater Western Sydney",
+        "shows": [
+          {
+            "slug": "rhythmworks",
+            "dateline": "3–12 May | Term 2, Weeks 2–3",
+            "isNew": false
+          },
+          {
+            "slug": "imagination",
+            "dateline": "7–11 Jun | Term 2, Week 7",
+            "isNew": false
+          },
+          {
+            "slug": "water",
+            "dateline": "23–27 Aug | Term 3, Week 6",
+            "isNew": false
+          },
+          {
+            "slug": "roots",
+            "dateline": "18–25 Oct & 28–29 Oct | Term 4, Weeks 2–3",
+            "isNew": true
+          }
+        ]
+      },
+      {
+        "name": "Hunter",
+        "shows": [
+          {
+            "slug": "elcamino",
+            "dateline": "26 Jul–5 Aug | Term 3, Weeks 2–3",
+            "isNew": false
+          },
+          {
+            "slug": "world",
+            "dateline": "19–29 Oct | Term 4, Weeks 2–3",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Illawarra & South Coast",
+        "shows": [
+          {
+            "slug": "rhythmworks",
+            "dateline": "20 May–1 Jun | Term 2, Weeks 4–6",
+            "isNew": false
+          },
+          {
+            "slug": "lost",
+            "dateline": "18–29 Oct | Term 4, Weeks 2–3",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Mid North Coast",
+        "shows": [
+          {
+            "slug": "wyniss",
+            "dateline": "5–11 Aug | Term 3, Weeks 3–4",
+            "isNew": false
+          },
+          {
+            "slug": "world",
+            "dateline": "1–3 Nov | Term 4, Week 4",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "North West",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "31 May–4 Jun | Term 2, Weeks 2–3",
+            "isNew": false
+          },
+          {
+            "slug": "elcamino",
+            "dateline": "18–29 Oct | Term 4, Weeks 2–3",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Riverina",
+        "shows": [
+          {
+            "slug": "water",
+            "dateline": "21–25 Jun | Term 2, Week 9",
+            "isNew": false
+          },
+          {
+            "slug": "roots",
+            "dateline": "13–17 Sep | Term 3",
+            "isNew": true
+          }
+        ]
+      },
+      {
+        "name": "South Western Sydney",
+        "shows": [
+          {
+            "slug": "grooves",
+            "dateline": "21–22 Jun (T2, Week 9) & 15–17 Sep (T3, Week 9)",
+            "isNew": true
+          },
+          {
+            "slug": "wyniss",
+            "dateline": "26 Jul–4 Aug | Term 3, Weeks 2–3",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Western",
+        "shows": [
+          {
+            "slug": "water",
+            "dateline": "3–14 May | Term 2, Weeks 2–3",
+            "isNew": false
+          },
+          {
+            "slug": "life",
+            "dateline": "25 Oct–4 Nov | Term 4, Weeks 3–4",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Far North Coast",
+        "shows": [
+          {
+            "slug": "wyniss",
+            "dateline": "5–11 Aug | Term 3, Weeks 3–4",
+            "isNew": false
+          }
+        ]
+      }
+    ],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationNSW@musicaviva.com.au"
+    ]
+  },
+  "VIC": {
+    "code": "VIC",
+    "primary": "Melbourne & Geelong",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "life",
+        "dateline": "17–21 May | Term 2",
+        "isNew": false
+      },
+      {
+        "slug": "imagination",
+        "dateline": "18–19 Aug | Term 3",
+        "isNew": false
+      },
+      {
+        "slug": "grooves",
+        "dateline": "26 Jul–3 Aug | Term 3",
+        "isNew": true
+      },
+      {
+        "slug": "gameday",
+        "dateline": "30–31 Aug | Term 3",
+        "isNew": false
+      }
+    ],
+    "regions": [
+      {
+        "name": "Gippsland",
+        "shows": [
+          {
+            "slug": "life",
+            "dateline": "24–26 May | Term 2",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Hume",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "1–6 Sep | Term 3",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Loddon Mallee",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "7–10 Sep | Term 3",
+            "isNew": false
+          }
+        ]
+      }
+    ],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationVIC@musicaviva.com.au"
+    ]
+  },
+  "QLD": {
+    "code": "QLD",
+    "primary": "Brisbane, Logan & Gold Coast",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "moonradio",
+        "dateline": "10–14 May | Term 2, Week 5",
+        "isNew": false
+      },
+      {
+        "slug": "life",
+        "dateline": "7–11 Jun | Term 2, Week 9",
+        "isNew": false
+      },
+      {
+        "slug": "lost",
+        "dateline": "26–30 Jul | Term 3, Week 3",
+        "isNew": false
+      },
+      {
+        "slug": "imagination",
+        "dateline": "30 Aug–2 Sep | Term 3, Week 8",
+        "isNew": false
+      },
+      {
+        "slug": "water",
+        "dateline": "18–22 Oct | Term 4, Week 3",
+        "isNew": false
+      }
+    ],
+    "regions": [
+      {
+        "name": "Central QLD",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "15 Jul–4 Aug | Term 3, Weeks 1–4",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Darling Downs & South West QLD",
+        "shows": [
+          {
+            "slug": "imagination",
+            "dateline": "23–27 Aug | Term 3, Week 7",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Far North QLD",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "15 Jul–4 Aug | Term 3, Weeks 1–4",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Mackay & Whitsundays",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "15 Jul–4 Aug | Term 3, Weeks 1–4",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "North Coast",
+        "shows": [
+          {
+            "slug": "life",
+            "dateline": "14–16 Jun | Term 2, Week 10",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Northern QLD",
+        "shows": [
+          {
+            "slug": "gameday",
+            "dateline": "15 Jul–4 Aug | Term 3, Weeks 1–4",
+            "isNew": false
+          }
+        ]
+      },
+    ],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationQLD@musicaviva.com.au"
+    ]
+  },
+  "WA": {
+    "code": "WA",
+    "primary": "Perth",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "elcamino",
+        "dateline": "10–14 May | Term 2, Week 3",
+        "isNew": false
+      },
+      {
+        "slug": "imagination",
+        "dateline": "20–21 May | Term 2, Week 4",
+        "isNew": false
+      },
+      {
+        "slug": "world",
+        "dateline": "8 & 18 Jun | Term 2, Weeks 7 & 8",
+        "isNew": false
+      },
+      {
+        "slug": "grooves",
+        "dateline": "6–10 Sep | Term 3, Week 8",
+        "isNew": true
+      },
+      {
+        "slug": "wyniss",
+        "dateline": "18–22 Oct | Term 4, Week 2",
+        "isNew": false
+      }
+    ],
+    "regions": [
+      {
+        "name": "Albany & Esperance",
+        "shows": [
+          {
+            "slug": "imagination",
+            "dateline": "10–19 May | Term 2",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Geraldton & the Coral Coast",
+        "shows": [
+          {
+            "slug": "wyniss",
+            "dateline": "25 Oct–2 Nov | Term 4",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Kalgoorlie & the Goldfields",
+        "shows": [
+          {
+            "slug": "world",
+            "dateline": "9–17 Jun | Term 2",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Kimberley",
+        "shows": [
+          {
+            "slug": "elcamino",
+            "dateline": "3–7 May | Term 2",
+            "isNew": false
+          }
+        ]
+      }
+    ],
+    "team": [
+      "Hannah Lee Tungate, WA State Coordinator, 08 6277 0042",
+      "Kieran Lynch, WA Administration Coordinator, 08 6277 0041",
+      "educationWA@musicaviva.com.au"
+    ]
+  },
+  "SA": {
+    "code": "SA",
+    "primary": "Adelaide",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "lost",
+        "dateline": "21–24 Jun | Term 2",
+        "isNew": false
+      },
+      {
+        "slug": "roots",
+        "dateline": "24–28 May | Term 2",
+        "isNew": true
+      },
+      {
+        "slug": "wireless",
+        "dateline": "26–30 Jul | Term 3",
+        "isNew": false
+      },
+      {
+        "slug": "grooves",
+        "dateline": "18–22 Oct | Term 4",
+        "isNew": true
+      }
+    ],
+    "regions": [
+      {
+        "name": "Country North",
+        "shows": [
+          {
+            "slug": "wireless",
+            "dateline": "2–6 Aug | Term 3",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Country South",
+        "shows": [
+          {
+            "slug": "lost",
+            "dateline": "15–18 Jun | Term 2",
+            "isNew": false
+          }
+        ]
+      },
+      {
+        "name": "Riverland",
+        "shows": [
+          {
+            "slug": "roots",
+            "dateline": "31 May–2 Jun | Term 2",
+            "isNew": true
+          }
+        ]
+      }
+    ],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationSA@musicaviva.com.au"
+    ]
+  },
+  "TAS": {
+    "code": "TAS",
+    "primary": "Tasmania",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "suitcase",
+        "dateline": "6–17 Sep | Term 3",
+        "isNew": false
+      }
+    ],
+    "regions": [],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationTAS-NT@musicaviva.com.au"
+    ]
+  },
+  "ACT": {
+    "code": "ACT",
+    "primary": "Canberra & Surrounds",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "suitcase",
+        "dateline": "17–28 May | Term 2",
+        "isNew": false
+      },
+      {
+        "slug": "imagination",
+        "dateline": "25 Oct–5 Nov | Term 4",
+        "isNew": false
+      }
+    ],
+    "regions": [],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationACT@musicaviva.com.au"
+    ]
+  },
+  "NT": {
+    "code": "NT",
+    "primary": "Northern Territory",
+    "intro": "Below you will find the shows touring REGION. Learn more about them below, and at the bottom of this email you will find pricing and answers to other frequently asked questions.",
+    "primaryShows": [
+      {
+        "slug": "world",
+        "dateline": "17–28 May | Term 2",
+        "isNew": false
+      }
+    ],
+    "regions": [],
+    "team": [
+      "[State Coordinator name, title and direct line]",
+      "1300 663 608",
+      "educationTAS-NT@musicaviva.com.au"
+    ]
+  }
+};
+
+const SLUG_LIST = ["elcamino","imagination","world","grooves","wyniss","gameday","life","suitcase","roots","lost","wireless","moonradio","rhythmworks","water"];
+const SLUG_FLAGS = (slug) => { const o = {}; SLUG_LIST.forEach(k => { o['is_' + k] = (k === slug); }); return o; };
+
+// Single source of truth for the signature block: current state office people, in
+// signing order, followed by the shared education inbox. Titles per Elena, Aug 2026.
+const STATE_TEAM = {
+  // Dedicated state landlines where they exist; the national 1300 where a desk has none.
+  NSW: [
+    'Brendan McRae, NSW Education Manager, 02 8394 6688',
+    'Matilda Street, NSW Education Coordinator, 02 8394 6688',
+  ],
+  VIC: [
+    'Nisha Feik, VIC Education Manager, 1300 663 608',
+    'Molly Jenkins, VIC Education Coordinator, 1300 663 608',
+  ],
+  QLD: [
+    'Paul McMahon, QLD State Manager, 1300 663 608',
+    'Claire Litwinowicz, QLD State Coordinator, 1300 663 608',
+    'Zoe Schramm, QLD Admin Coordinator, 1300 663 608',
+  ],
+  SA: [
+    'Sandra Taylor, SA State Manager, 08 7223 0115',
+    'Sadie Humphrey, SA State Coordinator, 08 7223 0114',
+    'Chona Dempsey, SA Admin Coordinator, 08 7223 0114',
+  ],
+  WA: [
+    'Hannah Lee Tungate, WA State Manager, 08 6277 0042',
+    'Kieran Lynch, WA State Coordinator, 08 6277 0041',
+    'Elena Wittkhun, WA Admin Coordinator, 08 6277 0041',
+  ],
+  ACT: [
+    'Leah Blankendaal, ACT & Government Engagement Manager, 1300 663 608',
+    'Marlene Troestl, ACT & Government Engagement Coordinator, 0410 589 447',
+  ],
+  TAS: ['Josephine Lonergan, Education Coordinator, 02 8394 6688'],
+  NT: ['Josephine Lonergan, Education Coordinator, 02 8394 6688'],
+};
+
+const STATE_CONTACT = {
+  NSW: { email: 'educationNSW@musicaviva.com.au', office: 'Musica Viva Australia House, 757 Elizabeth Street, Zetland NSW 2017 | Postal: PO Box 1687, Strawberry Hills NSW 2012' },
+  VIC: { email: 'educationVIC@musicaviva.com.au', office: 'Level 4, 35–47 City Road, Southbank VIC 3006' },
+  QLD: { email: 'educationQLD@musicaviva.com.au', office: 'Judith Wright Centre of Contemporary Art, Level 2, 420 Brunswick Street, Fortitude Valley QLD 4006 | Postal: PO Box 561, Fortitude Valley, Brisbane QLD 4006' },
+  SA: { email: 'educationSA@musicaviva.com.au', office: 'ABC Centre, Level 3, 85 North East Road, Collinswood SA 5081' },
+  WA: { email: 'educationWA@musicaviva.com.au', office: 'ABC Studios, Level 2, 30 Fielder Street, East Perth WA 6004' },
+  ACT: { email: 'educationACT@musicaviva.com.au', office: 'Ainslie Arts Centre, 30 Elouera Street, Braddon ACT 2612' },
+  TAS: { email: 'educationTAS-NT@musicaviva.com.au', office: 'Musica Viva Australia House, 757 Elizabeth Street, Zetland NSW 2017' },
+  NT: { email: 'educationTAS-NT@musicaviva.com.au', office: 'Musica Viva Australia House, 757 Elizabeth Street, Zetland NSW 2017' },
+};
+
+// The loaded segment (NSW: Met North) sits in this touring area, so picking a school
+// from the list also selects the right tour dates and show line-up.
+const MET_NORTH_AREA = 'Sydney North & Central Coast';
+const MET_NORTH = [
+  {"name":"Cammeray Public School","suburb":"Cammeray","contact":"Ms Virginia Esparraga","first":"Virginia","role":"Primary contact","email":"virginia.esparraga@det.nsw.edu.au","schoolEmail":"cammeray-p.school@det.nsw.edu.au","icsea":1168,"students":622,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Central Coast Grammar School (Primary)","suburb":"Erina Heights","contact":"Joseph Smith","first":"Joseph","role":"Primary contact","email":"joseph.smith@ccgs.nsw.edu.au","schoolEmail":"info@ccgs.nsw.edu.au","icsea":1155,"students":1561,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Central Mangrove Public School","suburb":"Central Mangrove","contact":"Sharon Quinlan","first":"Sharon","role":"Primary contact","email":"centmangro-p.school@det.nsw.edu.au","schoolEmail":"centmangro-p.school@det.nsw.edu.au","icsea":886,"students":23,"type":"Primary","plan":"E27_3 Loyal 2yr 26+25"},
+  {"name":"Eastwood Public School","suburb":"Eastwood","contact":"Lindsey Foster","first":"Lindsey","role":"Primary contact","email":"eastwood-p.school@det.nsw.edu.au","schoolEmail":"eastwood-p.school@det.nsw.edu.au","icsea":1108,"students":701,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Ermington Public School","suburb":"West Ryde","contact":"James Talevski","first":"James","role":"Primary contact","email":"james.talevski6@det.nsw.edu.au","schoolEmail":"ermington-p.school@det.nsw.edu.au","icsea":1117,"students":472,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Forestville Public School","suburb":"Forestville","contact":"Ms Jessica Mathieson","first":"Jessica","role":"Primary contact","email":"jessica.brown206@det.nsw.edu.au","schoolEmail":"forestvill-p.school@det.nsw.edu.au","icsea":1141,"students":462,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Killara Public School","suburb":"Killara","contact":"Jennifer Lewis","first":"Jennifer","role":"Primary contact","email":"jennifer.e.lewis@det.nsw.edu.au","schoolEmail":"killara-p.school@det.nsw.edu.au","icsea":1148,"students":273,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Kulnura Public School","suburb":"Kulnura","contact":"Mr Steven Collins","first":"Steven","role":"Principal","email":"steven.j.collins@det.nsw.edu.au","schoolEmail":"kulnura-p.school@det.nsw.edu.au","icsea":975,"students":37,"type":"Primary","plan":"E27_3 Loyal 2yr 26+25"},
+  {"name":"Lane Cove Public School","suburb":"Lane Cove","contact":"Sally Robertson","first":"Sally","role":"Primary contact","email":"sally.largent@det.nsw.edu.au","schoolEmail":"lanecove-p.School@det.nsw.edu.au","icsea":1178,"students":688,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Manly Village Public School","suburb":"Manly","contact":"","first":"","role":"","email":"manlyvill-p.school@det.nsw.edu.au","schoolEmail":"manlyvill-p.school@det.nsw.edu.au","icsea":1151,"students":532,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Mowbray Public School","suburb":"Lane Cove","contact":"Kirrily Ayn","first":"Kirrily","role":"Primary contact","email":"kirrily.smith2@det.nsw.edu.au","schoolEmail":"mowbray-p.school@det.nsw.edu.au","icsea":1143,"students":714,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Narrabeen North Public School","suburb":"North Narrabeen","contact":"Mrs Brita Thoroughgood","first":"Brita","role":"Primary contact","email":"brita.thoroughgood@det.nsw.edu.au","schoolEmail":"narranorth-p.School@det.nsw.edu.au","icsea":1076,"students":580,"type":"Primary","plan":"E27_5 Return 2+yr 26+08-23"},
+  {"name":"Northside Montessori School","suburb":"Pymble","contact":"Mr Adam Scotney","first":"Adam","role":"Primary contact","email":"adam.scotney@northsidemontessori.nsw.edu.au","schoolEmail":"admin@northsidemontessori.nsw.edu.au","icsea":1147,"students":159,"type":"Primary","plan":"E27_3 Loyal 2yr 26+25"},
+  {"name":"Peats Ridge Public School","suburb":"Peats Ridge","contact":"Victoria Priest","first":"Victoria","role":"Primary contact","email":"victoria.priest2@det.nsw.edu.au","schoolEmail":"peatsridge-p.School@det.nsw.edu.au","icsea":947,"students":19,"type":"Primary","plan":"E27_3 Loyal 2yr 26+25"},
+  {"name":"Roselea Public School","suburb":"Carlingford","contact":"Ms Caroline Craig","first":"Caroline","role":"Primary contact","email":"caroline.craig@det.nsw.edu.au","schoolEmail":"roselea-p.school@det.nsw.edu.au","icsea":1112,"students":306,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Truscott Street Public School","suburb":"North Ryde","contact":"Kate Derham","first":"Kate","role":"Primary contact","email":"kate.derham2@Det.nsw.edu.au","schoolEmail":"truscottst-p.school@det.nsw.edu.au","icsea":1144,"students":265,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Wahroonga Public School","suburb":"Wahroonga","contact":"Ms Philippa Fox","first":"Philippa","role":"Principal","email":"philippa.fox@det.nsw.edu.au","schoolEmail":"wahroonga-p.school@det.nsw.edu.au","icsea":1156,"students":508,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"West Pennant Hills Public School","suburb":"West Pennant Hills","contact":"Mrs Dianne Alchin","first":"Dianne","role":"Primary contact","email":"Dianne.alchin@det.nsw.edu.au","schoolEmail":"westpenhil-p.school@det.nsw.edu.au","icsea":1134,"students":510,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Willoughby Public School","suburb":"Willoughby","contact":"","first":"","role":"","email":"willoughby-p.school@det.nsw.edu.au","schoolEmail":"willoughby-p.school@det.nsw.edu.au","icsea":1143,"students":905,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Harbord Public School","suburb":"Freshwater","contact":"Ms Alice Dalgleish","first":"Alice","role":"Primary contact","email":"alice.dalgleish1@det.nsw.edu.au","schoolEmail":"harbord-p.school@det.nsw.edu.au","icsea":1137,"students":881,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Lindfield East Public School","suburb":"East Lindfield","contact":"David Cox","first":"David","role":"Primary contact","email":"david.cox25@det.nsw.edu.au","schoolEmail":"lindfielde-p.school@det.nsw.edu.au","icsea":1167,"students":531,"type":"Primary","plan":"E27_5 Return 2+yr 26+08-23"},
+  {"name":"Arranounbai School","suburb":"Frenchs Forest","contact":"Jo-Ann Osborne","first":"Jo-Ann","role":"Primary contact","email":"JO-ANN.OSBORNE@det.nsw.edu.au","schoolEmail":"arranoun-s.school@det.nsw.edu.au","icsea":1073,"students":34,"type":"Special","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Beacon Hill Public School","suburb":"Beacon Hill","contact":"Mrs Gaille Margaret Bowe","first":"Gaille","role":"Primary contact","email":"gaille.bowe@det.nsw.edu.au","schoolEmail":"beaconhill-p.school@det.nsw.edu.au","icsea":1099,"students":459,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Castle Cove Public School","suburb":"Castle Cove","contact":"Sarah Smith","first":"Sarah","role":"Primary contact","email":"sarah.smith224@det.nsw.edu.au","schoolEmail":"castlecove-p.school@det.nsw.edu.au","icsea":1167,"students":273,"type":"Primary","plan":"E27_4 Return 1yr 26+24 Biennia"},
+  {"name":"Erina Heights Public School","suburb":"Erina Heights","contact":"Ms Angela Thaler","first":"Angela","role":"Primary contact","email":"Angela.thaler1@det.nsw.edu.au","schoolEmail":"erinahts-p.school@det.nsw.edu.au","icsea":1094,"students":254,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Frenchs Forest Public School","suburb":"Frenchs Forest","contact":"Nicole Arnold","first":"Nicole","role":"Primary contact","email":"nicole.arnold4@det.nsw.edu.au","schoolEmail":"frenchsfor-p.school@det.nsw.edu.au","icsea":1123,"students":218,"type":"Primary","plan":"E27_1 New 26+ No Hist"},
+  {"name":"Glenvale School","suburb":"Narara","contact":"Mrs Karen Campbell","first":"Karen","role":"Primary contact","email":"karen.campbell@det.nsw.edu.au","schoolEmail":"glenvale-s.school@det.nsw.edu.au","icsea":963,"students":159,"type":"Special","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Hunters Hill Public School","suburb":"Hunters Hill","contact":"Miss Kim Dudgeon","first":"Kim","role":"Primary contact","email":"kim.dudgeon@det.nsw.edu.au","schoolEmail":"huntershil-p.school@det.nsw.edu.au","icsea":1149,"students":228,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Kenthurst Public School","suburb":"Kenthurst","contact":"Donielle Beard","first":"Donielle","role":"Primary contact","email":"donielle.beard1@det.nsw.edu.au","schoolEmail":"kenthurst-p.school@det.nsw.edu.au","icsea":1040,"students":187,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Mosman Public School","suburb":"Mosman","contact":"Claudia Mete","first":"Claudia","role":"Primary contact","email":"Claudia.mete2@det.nsw.edu.au","schoolEmail":"mosman-p.School@det.nsw.edu.au","icsea":1157,"students":458,"type":"Primary","plan":"E27_5 Return 2+yr 26+08-23"},
+  {"name":"Pretty Beach Public School","suburb":"Wagstaff","contact":"Kylie Hickson","first":"Kylie","role":"Primary contact","email":"kylie.hickson4@det.nsw.edu.au","schoolEmail":"prettybch-p.school@det.nsw.edu.au","icsea":1102,"students":154,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"West Pymble Public School","suburb":"West Pymble","contact":"Megan Cronin","first":"Megan","role":"Primary contact","email":"rosemary.cronin1@det.nsw.edu.au","schoolEmail":"westpymble-p.school@det.nsw.edu.au","icsea":1173,"students":250,"type":"Primary","plan":"E27_4 Return 1yr 26+24 Biennia"},
+  {"name":"Somersby Public School","suburb":"Somersby","contact":"Jenna Herdegen","first":"Jenna","role":"Primary contact","email":"jenna.herdegen1@det.nsw.edu.au","schoolEmail":"somersby-p.school@det.nsw.edu.au","icsea":1034,"students":56,"type":"Primary","plan":"E27_5 Return 2+yr 26+08-23"},
+  {"name":"Tuggerah Public School","suburb":"Tuggerah","contact":"Sharlene Percival","first":"Sharlene","role":"Primary contact","email":"tuggerah-p.school@det.nsw.edu.au","schoolEmail":"tuggerah-p.school@det.nsw.edu.au","icsea":993,"students":359,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Waitara Public School","suburb":"Wahroonga","contact":"Ms Jenny Bell","first":"Jenny","role":"Primary contact","email":"jennifer.r.bell@det.nsw.edu.au","schoolEmail":"waitara-p.school@det.nsw.edu.au","icsea":1148,"students":972,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Wyoming Public School","suburb":"Wyoming","contact":"Jane Ure","first":"Jane","role":"Primary contact","email":"wyoming-p.school@det.nsw.edu.au","schoolEmail":"wyoming-p.school@det.nsw.edu.au","icsea":940,"students":302,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Wyong Creek Public School","suburb":"Wyong","contact":"Ms Lorene Alexander","first":"Lorene","role":"Principal","email":"lorene.alexander@det.nsw.edu.au","schoolEmail":"wyongcreek-p.school@det.nsw.edu.au","icsea":978,"students":94,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Central Coast Adventist School","suburb":"Erina","contact":"Ali Heise","first":"Ali","role":"Primary contact","email":"ali.heise@ccas.nsw.edu.au","schoolEmail":"primaryreception@ccas.nsw.edu.au","icsea":1112,"students":1136,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"St Philip's Christian College (Gosford)","suburb":"Narara","contact":"Ms Elyse Atkins","first":"Elyse","role":"Primary contact","email":"elyse.atkins@spcc.nsw.edu.au","schoolEmail":"gosford@spcc.nsw.edu.au","icsea":1032,"students":1276,"type":"Primary","plan":"E27_1 New 26+ No Hist"},
+  {"name":"Redlands (Junior)","suburb":"Cremorne","contact":"Ms Jacqueline Mcglade","first":"Jacqueline","role":"Primary contact","email":"jmcglade@redlands.nsw.edu.au","schoolEmail":"juniormusic@redlands.nsw.edu.au","icsea":1194,"students":600,"type":"Primary","plan":"E27_5 Return 2+yr 26+08-23"},
+  {"name":"Holy Family Primary School","suburb":"Lindfield","contact":"Leona Nash","first":"Leona","role":"Primary contact","email":"leona.nash@dbb.catholic.edu.au","schoolEmail":"hfl@dbb.org.au","icsea":1168,"students":259,"type":"Primary","plan":"E27_3 Loyal 2yr 26+25"},
+  {"name":"Maria Regina Catholic Primary School","suburb":"Avalon Beach","contact":"Kirsty Thorpe","first":"Kirsty","role":"Principal","email":"mra@dbb.catholic.edu.au","schoolEmail":"mra@dbb.catholic.edu.au","icsea":1102,"students":154,"type":"Primary","plan":"E27_1 New 26+ No Hist"},
+  {"name":"Our Lady of the Rosary Catholic Primary School","suburb":"Waitara","contact":"Ms Ann Mason","first":"Ann","role":"Primary contact","email":"ann.mason@dbb.catholic.edu.au","schoolEmail":"olorw@dbb.catholic.edu.au","icsea":1153,"students":337,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"St Cecilia's Catholic Primary School","suburb":"Balgowlah","contact":"Tom Walters","first":"Tom","role":"Primary contact","email":"tom.walters@dbb.catholic.edu.au","schoolEmail":"scb@dbb.catholic.edu.au","icsea":1168,"students":232,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"Arden Anglican School","suburb":"Beecroft","contact":"Ms Elisabeth James","first":"Elisabeth","role":"Primary contact","email":"e.james@arden.nsw.edu.au","schoolEmail":"juniorschool@arden.nsw.edu.au","icsea":1173,"students":997,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Kamaroi Rudolf Steiner School","suburb":"Belrose","contact":"Ms Aleisha Kahn","first":"Aleisha","role":"Primary contact","email":"aleishak@kamaroi.nsw.edu.au","schoolEmail":"kamaroi@kamaroi.nsw.edu.au","icsea":1092,"students":180,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Kinma School","suburb":"Terrey Hills","contact":"Ms Emily Hodgson","first":"Emily","role":"Primary contact","email":"edleader@kinma.nsw.edu.au","schoolEmail":"admin@kinma.nsw.edu.au","icsea":1096,"students":67,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Northcross Christian School","suburb":"Ryde","contact":"Leatitia Breytenbach","first":"Leatitia","role":"Primary contact","email":"Laetitia.Breytenbach@northcross.nsw.edu.au","schoolEmail":"admin@northcross.nsw.edu.au","icsea":1194,"students":374,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Green Point Christian College","suburb":"Green Point","contact":"Mrs Rebecca Mckeown","first":"Rebecca","role":"Primary contact","email":"rebecca.mckeown@gpcc.nsw.edu.au","schoolEmail":"office@gpcc.nsw.edu.au","icsea":1106,"students":1175,"type":"Primary","plan":"E27_4 Return 1yr 26+24 Biennia"},
+  {"name":"Queenwood (Junior)","suburb":"Mosman","contact":"Nicole Osborne","first":"Nicole","role":"Primary contact","email":"Nicole.Osborne@queenwood.nsw.edu.au","schoolEmail":"music@queenwood.nsw.edu.au","icsea":0,"students":873,"type":"Primary","plan":"E27_5 Return 2+yr 26+08-23"},
+  {"name":"St Angela's Primary School","suburb":"Castle Hill","contact":"Ms Kathryn Criss","first":"Kathryn","role":"Primary contact","email":"kcriss@parra.catholic.edu.au","schoolEmail":"stangelas@parra.catholic.edu.au","icsea":1126,"students":618,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Italian Bilingual School","suburb":"Meadowbank","contact":"Ms Cristina Pisani","first":"Cristina","role":"Primary contact","email":"cristina.pisani@ibs.nsw.edu.au","schoolEmail":"office@ibs.nsw.edu.au","icsea":1142,"students":111,"type":"Primary","plan":"E27_2 Loyal 3yr 26+25+24"},
+  {"name":"Central Coast Steiner School","suburb":"Fountaindale","contact":"Felicity Stinson","first":"Felicity","role":"Primary contact","email":"fstinson@ccrss.nsw.edu.au","schoolEmail":"info@ccrss.nsw.edu.au","icsea":1092,"students":330,"type":"Primary","plan":"E27_1 New 26+ No Hist"},
+  {"name":"Coast Christian School","suburb":"Bensville","contact":"Ms Sophie Mccarthy","first":"Sophie","role":"Primary contact","email":"office@coastcs.nsw.edu.au","schoolEmail":"office@coastcs.nsw.edu.au","icsea":1061,"students":234,"type":"Primary","plan":"E27_6a Lapsed 1yr 25+23 Bienni"},
+  {"name":"Porters Creek Public School","suburb":"Warnervale","contact":"Mr Charles Cox","first":"Charles","role":"Primary contact","email":"charles.cox5@det.nsw.edu.au","schoolEmail":"porterscreek-p.school@det.nsw.edu.au","icsea":988,"students":317,"type":"Primary","plan":"E27_6b Lapsed 1yr 25"},
+  {"name":"John Colet School","suburb":"Belrose","contact":"Mrs Glen Miller","first":"Glen","role":"Primary contact","email":"gmiller@johncolet.nsw.edu.au","schoolEmail":"admin@johncolet.nsw.edu.au","icsea":1210,"students":275,"type":"Primary","plan":"E27_4 Return 1yr 26+24 Biennia"}
+];
+
+const STATE_ORDER = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT'];
+const TEMPLATES = [
+  { key: 'precontact', label: 'Pre-contact (first touch)' },
+  { key: 'standard', label: 'Standard' },
+  { key: 'icsea', label: 'Low ICSEA' },
+  { key: 'regional', label: 'Regional touring area' },
+  { key: 'diverse', label: 'Diverse Access Needs' },
+];
+
+class Component extends DCLogic {
+  state = { data: STATES, stateCode: 'NSW', template: 'standard', equalMusic: null, bookingHelp: null, region: null, opening: 'A', copied: false, schoolName: '', contactName: '', callerName: '', weeks: {} };
+
+  // The source panel is built from the live email node, so it can only be regenerated
+  // after a state change has been committed to the DOM. Hooking setState covers every
+  // control (state, template, region, opening, names, image base) in one place.
+  setState(patch, cb) {
+    super.setState(patch, () => {
+      if (this.state.showSource) {
+        const next = this.buildCleanHtml();
+        if (next !== this.state.sourceHtml) super.setState({ sourceHtml: next });
+      }
+      if (cb) cb();
+    });
+  }
+
+  componentDidMount() {
+    try {
+      const saved = localStorage.getItem('mva-img-base');
+      if (saved) this.setState({ imgBase: saved });
+      const urls = localStorage.getItem('mva-img-urls');
+      if (urls) this.setState({ imgUrls: JSON.parse(urls) });
+      const caller = localStorage.getItem('mva-caller-name');
+      if (caller) this.setState({ callerName: caller });
+    } catch (e) {}
+  }
+
+  selectState = (code) => () => this.setState({ stateCode: code, region: null });
+  selectTemplate = (key) => () => this.setState({ template: key });
+  setRegion = (e) => this.setState({ region: e.target.value });
+
+  // Filled-in details replace the yellow placeholders before the email leaves the builder,
+  // so nothing highlighted ever reaches Outlook (where highlights can't auto-clear on edit).
+  setSchoolName = (e) => this.setState({ schoolName: e.target.value });
+  setContactName = (e) => this.setState({ contactName: e.target.value });
+  setCallerName = (e) => {
+    const callerName = e.target.value;
+    this.setState({ callerName });
+    try { localStorage.setItem('mva-caller-name', callerName); } catch (err) {}
+  };
+  setWeek = (key) => (e) => {
+    const value = e.target.value;
+    this.setState(s => ({ weeks: Object.assign({}, s.weeks, { [key]: value }) }));
+  };
+  clearFields = () => this.setState({ schoolName: '', contactName: '', weeks: {}, pickedSchool: '', customNote: '' });
+
+  // Picking from the Met North segment fills the school and contact fields in one step,
+  // so the caller never retypes a name that is already in the list.
+  pickSchool = (e) => {
+    const name = e.target.value;
+    const rec = MET_NORTH.find(s => s.name === name);
+    if (!rec) return this.setState({ pickedSchool: '' });
+    this.setState({ pickedSchool: name, schoolName: rec.name, contactName: rec.first, region: MET_NORTH_AREA });
+  };
+  setOpening = (e) => this.setState({ opening: e.target.value });
+
+  fallbackCopy = (text) => {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.top = '-1000px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      const ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch (e) { return false; }
+  };
+
+  // Clean, portable email markup: strips editor/runtime attributes and unwraps
+  // the interpolation spans the renderer adds, leaving plain table HTML.
+  buildCleanHtml = () => {
+    if (!this._el) return '';
+    const clone = this._el.cloneNode(true);
+    clone.querySelectorAll('span.sc-interp').forEach(sp => {
+      const parent = sp.parentNode;
+      while (sp.firstChild) parent.insertBefore(sp.firstChild, sp);
+      parent.removeChild(sp);
+    });
+    const strip = (el) => {
+      [...el.attributes].forEach(a => {
+        if (a.name === 'class' && /^om-/.test(el.getAttribute('class') || '')) return;
+        if (a.name === 'data-file' || a.name.startsWith('data-dc-') || a.name.startsWith('data-om-') || a.name === 'data-comment-anchor' || a.name === 'class') el.removeAttribute(a.name);
+      });
+      [...el.children].forEach(strip);
+    };
+    const base = (this.state.imgBase || '').trim().replace(/\/+$/, '');
+    const urls = this.state.imgUrls || {};
+    clone.querySelectorAll('img').forEach(img => {
+      const src = img.getAttribute('src') || '';
+      const file = img.getAttribute('data-file') || src.split('/').pop();
+      const exact = ((urls[file] || HOSTED[file] || '')).trim();
+      if (exact) img.setAttribute('src', exact);
+      else if (base) img.setAttribute('src', base + '/' + file);
+      else if (NOT_YET_HOSTED.indexOf(file) !== -1) img.setAttribute('src', file);
+      else if (!/^https?:/i.test(src)) img.setAttribute('src', 'REPLACE-WITH-HOSTED-URL/' + file);
+    });
+    strip(clone);
+    // CSSOM drops unknown properties, so every mso-* declaration authored in the template
+    // is lost the moment the DOM is serialized. Re-inject them at string level — this is
+    // the only way they survive into the markup a caller pastes into classic Outlook.
+    const body = clone.outerHTML
+      .replace(/style="([^"]*line-height:\s*\d+px[^"]*)"/g, (m, css) =>
+        /mso-line-height-rule/.test(css) ? m : 'style="' + css.replace(/;?\s*$/, '') + ';mso-line-height-rule:exactly"')
+      .replace(/style="([^"]*rgb\(255,\s*255,\s*73\)[^"]*)"/g, (m, css) =>
+        /mso-highlight/.test(css) ? m : 'style="' + css.replace(/;?\s*$/, '') + ';mso-highlight:#FFFF49"');
+    return '<!DOCTYPE html><html lang="en-AU" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light only"><style>:root{color-scheme:light only;supported-color-schemes:light only;}body{margin:0;padding:0;background:#E0E5E0;-webkit-text-size-adjust:100%;}[data-ogsc] *,[data-ogsb] *{color:inherit!important;background-color:inherit!important;}@media (prefers-color-scheme:dark){body,table,td,p,span,a,div{color:inherit!important;}}img{border:0;outline:none;text-decoration:none;}table{border-collapse:collapse;}a{color:#B33F17;}@media screen and (max-width:620px){.om-w{width:100%!important;max-width:100%!important;}.om-pad{padding-left:18px!important;padding-right:18px!important;}.om-h1{font-size:26px!important;line-height:32px!important;}.om-btn-gap{display:none!important;}.om-btn-row,.om-btn-row tbody,.om-btn-row tr{display:block!important;width:100%!important;}.om-btn-row td{display:block!important;width:100%!important;}.om-btn-row td+td{margin-top:10px!important;}}</style><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head><body style="margin:0;padding:0;background-color:#E0E5E0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;background-color:#E0E5E0;"><tr><td align="center" style="padding:20px 12px 36px 12px;">' + body + '</td></tr></table></body></html>';
+  };
+
+  downloadHtml = () => {
+    const html = this.buildCleanHtml();
+    const blob = new Blob([html], { type: 'text/html' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = (this._fileName || 'musica-viva-outreach') + '.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  };
+
+  // Copies the rendered email as rich content, so Outlook pastes a formatted
+  // email rather than a wall of markup.
+  richSelectionCopy = () => {
+    const html = this.buildCleanHtml();
+    const text = this._el.innerText || '';
+    let ok = false;
+    const handler = (e) => {
+      e.clipboardData.setData('text/html', html);
+      e.clipboardData.setData('text/plain', text);
+      e.preventDefault();
+      ok = true;
+    };
+    document.addEventListener('copy', handler, true);
+    try {
+      const sel = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(this._el);
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.execCommand('copy');
+      sel.removeAllRanges();
+    } catch (e) { /* handled below */ }
+    document.removeEventListener('copy', handler, true);
+    return ok;
+  };
+
+  legacySelectionCopy = () => {
+    try {
+      const sel = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(this._el);
+      sel.removeAllRanges();
+      sel.addRange(range);
+      const ok = document.execCommand('copy');
+      sel.removeAllRanges();
+      return ok;
+    } catch (e) { return false; }
+  };
+
+  copyEmail = () => {
+    if (!this._el) return;
+    const html = this.buildCleanHtml();
+    const done = () => { this.setState({ copied: true }); clearTimeout(this._t); this._t = setTimeout(() => this.setState({ copied: false }), 1600); };
+    const fail = () => { this.setState({ showSource: true, copied: false }); };
+    if (this.richSelectionCopy()) { done(); return; }
+    if (this.legacySelectionCopy()) { done(); return; }
+    if (navigator.clipboard && navigator.clipboard.write && window.ClipboardItem) {
+      // rich copy: pastes into Outlook as a formatted email, not as code
+      const item = new ClipboardItem({
+        'text/html': new Blob([html], { type: 'text/html' }),
+        'text/plain': new Blob([this._el.innerText || ''], { type: 'text/plain' }),
+      });
+      navigator.clipboard.write([item]).then(done).catch(() => {
+        if (navigator.clipboard.writeText) navigator.clipboard.writeText(html).then(done).catch(() => { this.fallbackCopy(html) ? done() : fail(); });
+        else { this.fallbackCopy(html) ? done() : fail(); }
+      });
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(html).then(done).catch(() => { this.fallbackCopy(html) ? done() : fail(); });
+      return;
+    }
+    this.fallbackCopy(html) ? done() : fail();
+  };
+
+  toggleSource = () => this.setState(s => ({ showSource: !s.showSource }));
+  noteParas = () => (this.state.customNote || '').split(/\n\s*\n/).map(t => t.replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean).map(text => ({ text }));
+  // null = follow the default for the selected email type; true/false = caller override
+  toggleBookingHelp = () => this.setState(st => ({ bookingHelp: !(st.bookingHelp === null ? this._bookingHelpDefault : st.bookingHelp) }));
+  toggleEqualMusic = () => this.setState(st => ({ equalMusic: !(st.equalMusic === null ? this._equalMusicDefault : st.equalMusic) }));
+
+  selectSource = (e) => { e.target.focus(); e.target.select(); };
+
+  setImgBase = (e) => {
+    const v = e.target.value;
+    this.setState({ imgBase: v });
+    try { localStorage.setItem('mva-img-base', v); } catch (err) {}
+  };
+
+  setImgUrl = (file) => (e) => {
+    const map = { ...(this.state.imgUrls || {}), [file]: e.target.value };
+    this.setState({ imgUrls: map });
+    try { localStorage.setItem('mva-img-urls', JSON.stringify(map)); } catch (err) {}
+  };
+
+  toggleImgPanel = () => this.setState(s => ({ showImgPanel: !s.showImgPanel }));
+
+  renderVals() {
+    const { data, stateCode, template, opening } = this.state;
+    const st = data ? data[stateCode] : null;
+    const isDiverse = template === 'diverse';
+    const isPre = template === 'precontact';
+    const isRegional = template === 'regional';
+    const isAssisted = template === 'icsea' || isRegional;
+
+    const regions = st && st.regions ? st.regions : [];
+    // Single source of truth for area content: the metro area plus the touring regions.
+    // Every template (including Diverse Access Needs) reads shows from the selected area,
+    // so picking a region auto-populates the right show details.
+    const metroArea = st ? { name: st.primary, shows: st.primaryShows || [] } : null;
+    const areaOptions = isRegional
+      ? regions.slice()
+      : (metroArea ? [metroArea].concat(regions) : []);
+    const picksArea = true;
+    const area = areaOptions.length
+      ? ((picksArea && areaOptions.find(r => r.name === this.state.region)) || areaOptions[0])
+      : metroArea;
+    const region = isRegional ? area : null;
+    const areaName = area ? area.name : '';
+    const areaShows = area && area.shows ? area.shows : [];
+
+    const rawShows = isDiverse ? [] : areaShows;
+    const shows = rawShows.map(s => {
+      const c = CATALOG[s.slug] || {};
+      const weekKey = stateCode + '|' + areaName + '|' + s.slug;
+      const weekVal = (this.state.weeks[weekKey] || '').trim();
+      return {
+        slug: s.slug,
+        weekText: weekVal || '00',
+        weekBg: weekVal ? 'transparent' : '#FFFF49',
+        title: (c.title || '').toUpperCase(),
+        tagline: c.tagline || '',
+        desc: c.desc || '',
+        url: c.url || '',
+        img: 'assets/shows/' + s.slug + '.jpg',
+        imgAlt: (c.title || '') + ' — photo of the performing group',
+        hasImg: true,
+        isNew: !!s.isNew,
+        ...SLUG_FLAGS(s.slug),
+        dates: (s.dateline || '').replace('[confirm week]', '').trim(),
+        // Datelines sourced from the state cheat sheet already carry their term week,
+        // so the editable "Week 00" slot is only rendered where one is still unknown.
+        needsWeek: !/\bWeeks?\s*\d/i.test(s.dateline || ''),
+      };
+    });
+
+    // state coordinator contact, taken from the state team block where it is known
+    let coordinatorContact = 'your State Education team on 1300 663 608';
+    if (st) {
+      const line = (STATE_TEAM[stateCode] || [])[1] || (STATE_TEAM[stateCode] || [])[0] || '';
+      if (!line.trim().startsWith('[')) {
+        const first = line.split(' ')[0];
+        const num = (line.match(/(\d[\d\s]{6,})\s*$/) || [])[1];
+        if (first && num) coordinatorContact = first + ' on ' + num.trim();
+      }
+    }
+
+    // Every template offers the same three openings: A left a message, B post-call
+    // (whole program), C post-call (discussed a show), worded for that template.
+    const openingSets = {
+      // Copy rule: "2027" appears once in the opening and not again in the paragraph
+      // that follows it, and no two consecutive sentences open the same way.
+      standard: {
+        A: ['I phoned the school earlier hoping to speak with you about the Musica Viva Australia In Schools program. Bookings for 2027 are now open, and we would love to visit ', ' next year.'],
+        B: ['Thanks for your time on the phone earlier. As promised, here is some more information about our Musica Viva Australia In Schools program for 2027. We would love to visit ', ' next year.'],
+        C: ['It was wonderful chatting just now about bringing the Musica Viva Australia In Schools program to ', '. As promised, here is a quick summary of what we discussed, along with the key details for 2027. Please let me know if you have any further questions.'],
+      },
+      regional: {
+        A: ['I phoned the school earlier hoping to speak with you about the Musica Viva Australia In Schools program. We are touring ' + areaName + ' in 2027, and we would love to visit ', ' while we are in the area.'],
+        B: ['Thanks for your time on the phone earlier. As promised, here is some more information about our Musica Viva Australia In Schools program. We are touring ' + areaName + ' in 2027, and we would love to visit ', ' while we are in the area.'],
+        C: ['It was wonderful chatting just now about bringing the Musica Viva Australia In Schools program to ', '. We are touring ' + areaName + ' in 2027, so here is a quick summary of what we discussed, along with the key details. Please let me know if you have any further questions.'],
+      },
+      diverse: {
+        A: ['I phoned the school earlier hoping to speak with you about the Musica Viva Australia In Schools program. Bookings for 2027 are now open, and we would love to bring a show to ', ' that suits your students.'],
+        B: ['Thanks for your time on the phone earlier. As promised, here is some more information about our Musica Viva Australia In Schools program for 2027. We would love to bring a show to ', ' that suits your students.'],
+        C: ['It was wonderful chatting just now about bringing the Musica Viva Australia In Schools program to ', '. As promised, here is a summary of what we discussed, including how we tailor a show to suit your students in 2027. Please let me know if you have any further questions.'],
+      },
+    };
+    const openings = isDiverse ? openingSets.diverse : (isRegional ? openingSets.regional : openingSets.standard);
+
+    let para1Pre, para1Post, para2, para3 = '', subjectLine, emailTitle;
+    if (isPre) {
+      // First touch, before any call: no shows, no FAQs — just why we're calling
+      // and an easy way to name a better time.
+      para1Pre = 'I\u2019m reaching out to secure ';
+      para1Post = '\u2019s 2027 Musica Viva Australia In Schools booking. Bookings are open now, and tour dates in your area tend to fill early in the year, so it\u2019s worth locking in sooner rather than later.';
+      para2 = 'I\u2019ll try calling you today. If another time suits better, just let me know when and I\u2019ll call you then.';
+      para3 = 'Below are the shows touring ' + areaName + ' this year. Further down, you\u2019ll find pricing and answers to the questions schools usually ask.';
+      subjectLine = 'Securing your 2027 Musica Viva Australia In Schools booking';
+      emailTitle = stateCode + ' — Pre-contact (first touch)';
+    } else if (isDiverse) {
+      para1Pre = openings[opening][0];
+      para1Post = openings[opening][1];
+      para2 = 'We work closely with specialist educators and schools to make music education accessible for students with diverse access needs. We can tailor the booking to suit your school, offer a shorter show, keep a clear structure, manage volume, and support interaction so every student can take part comfortably.';
+      subjectLine = 'Musica Viva Australia In Schools 2027: inclusive in-school shows tailored to your students';
+      emailTitle = stateCode + ' — Diverse Access Needs (' + areaName + ')';
+    } else if (isRegional) {
+      para1Pre = openings[opening][0];
+      para1Post = openings[opening][1];
+      para2 = '';
+      subjectLine = 'Musica Viva Australia In Schools 2027 is touring ' + areaName + '!';
+      emailTitle = stateCode + ' — ' + areaName + ' (regional touring area)';
+    } else {
+      para1Pre = openings[opening][0];
+      para1Post = openings[opening][1];
+      para2 = 'Below you will find the shows touring ' + areaName + ', and at the bottom of this email, pricing and answers to other frequently asked questions.';
+      subjectLine = 'Musica Viva Australia In Schools 2027!';
+      emailTitle = stateCode + ' — ' + areaName + (template === 'icsea' ? ' (low ICSEA)' : ' (standard)');
+    }
+    this._fileName = ('MVA-In-Schools-2027-' + stateCode + '-' + areaName + '-' + template).replace(/[^A-Za-z0-9-]+/g, '-');
+
+    const suggested = areaShows.slice(0, 2).map(s => (CATALOG[s.slug] || {}).title).filter(Boolean).join(' or ');
+    const diverseSuggestion = 'Shows we would suggest for your students (' + areaName + ', 2027): ' + (suggested || 'we will recommend the right fit for your students');
+
+    const equalMusicDefault = isRegional;
+    this._equalMusicDefault = equalMusicDefault;
+    // The 'help make life easier' offer is the natural next step in a first-touch email,
+    // so it defaults on there and stays opt-in elsewhere.
+    const bookingHelpDefault = isPre;
+    this._bookingHelpDefault = bookingHelpDefault;
+    const bookingHelpOn = this.state.bookingHelp === null ? bookingHelpDefault : !!this.state.bookingHelp;
+    const equalMusicOn = isPre ? false : (this.state.equalMusic === null ? equalMusicDefault : this.state.equalMusic);
+
+    const school = (this.state.schoolName || '').trim();
+    const contact = (this.state.contactName || '').trim();
+    const caller = (this.state.callerName || '').trim();
+    const weekFields = shows.filter(s => s.needsWeek).map(s => ({
+      label: s.title,
+      value: this.state.weeks[stateCode + '|' + areaName + '|' + s.slug] || '',
+      onInput: this.setWeek(stateCode + '|' + areaName + '|' + s.slug),
+    }));
+
+    const picked = MET_NORTH.find(s => s.name === this.state.pickedSchool) || null;
+    return {
+      hasSchoolList: stateCode === 'NSW',
+      schoolList: MET_NORTH.map(s => ({ name: s.name, label: s.name + (s.suburb ? ' — ' + s.suburb : '') })),
+      pickSchool: this.pickSchool,
+      pickedSchool: this.state.pickedSchool || '',
+      hasPickedSchool: !!picked,
+      pickedContact: picked ? (picked.contact || 'no contact on file') : '',
+      pickedRole: picked ? (picked.role || 'Contact') : '',
+      pickedEmail: picked ? picked.email : '',
+      pickedMailto: picked ? ('mailto:' + picked.email + '?subject=' + encodeURIComponent(subjectLine)) : '',
+      pickedMeta: picked ? [picked.type, picked.students ? picked.students + ' students' : '', picked.icsea ? 'ICSEA ' + picked.icsea + (picked.icsea < 1000 ? ' (consider Low ICSEA)' : '') : ''].filter(Boolean).join(' / ') : '',
+      schoolText: school || 'SCHOOL NAME',
+      schoolBg: school ? 'transparent' : '#FFFF49',
+      contactText: contact || 'NAME',
+      contactBg: contact ? 'transparent' : '#FFFF49',
+      callerText: caller || 'CALLER NAME',
+      callerBg: caller ? 'transparent' : '#FFFF49',
+      schoolName: this.state.schoolName,
+      contactName: this.state.contactName,
+      callerName: this.state.callerName,
+      setSchoolName: this.setSchoolName,
+      setContactName: this.setContactName,
+      setCallerName: this.setCallerName,
+      clearFields: this.clearFields,
+      weekFields,
+      hasWeekFields: weekFields.length > 0,
+      allFilled: !!(school && contact && caller) && weekFields.every(f => (f.value || '').trim()),
+      equalMusicOn,
+      bookingHelpOn: bookingHelpOn,
+      isPre,
+      showCtas: true,
+      showPreStave: false,
+      showEqualMusicToggle: !isPre,
+      showBookingHelpToggle: true,
+      bookingHelpLabel: bookingHelpOn ? 'ON' : 'OFF',
+      bookingHelpBg: bookingHelpOn ? '#FFFF49' : '#FFFFFF',
+      toggleBookingHelp: this.toggleBookingHelp,
+      hasPara2: !!para2,
+      para3,
+      hasPara3: !!para3,
+      equalMusicTop: para2 ? '18px' : '0',
+      equalMusicLabel: equalMusicOn ? 'ON' : 'OFF',
+      // The Low ICSEA FAQ already makes the Equal Music pitch, so flag the overlap there.
+      equalMusicNote: (template === 'icsea' && !isRegional && equalMusicOn) ? ' (also in FAQ below)' : '',
+      equalMusicBg: equalMusicOn ? '#FFFF49' : '#FFFFFF',
+      equalMusicFg: '#000000',
+      toggleEqualMusic: this.toggleEqualMusic,
+      anyWeekMissing: shows.some(s => s.needsWeek),
+      stateTabs: STATE_ORDER.map(code => ({
+        label: code,
+        select: this.selectState(code),
+        bg: code === stateCode ? '#FFFFFF' : '#000000',
+        fg: code === stateCode ? '#000000' : '#FFFFFF',
+      })),
+      templateTabs: TEMPLATES.map(t => ({
+        label: t.label,
+        select: this.selectTemplate(t.key),
+        bg: t.key === template ? '#4D4FF4' : '#000000',
+        fg: '#FFFFFF',
+      })),
+      hasRegionPicker: areaOptions.length > 1,
+      regionOptions: areaOptions,
+      regionName: areaName,
+      setRegion: this.setRegion,
+      hasOpeningPicker: !isPre,
+      opening,
+      setOpening: this.setOpening,
+      subjectLine,
+      emailTitle,
+      stateCode,
+      salutation: isDiverse ? 'Hi' : 'Dear',
+      ready: !!st,
+      notDiverse: !isDiverse,
+      isOutreach: !isDiverse,
+      headerImg: isDiverse ? 'assets/header-explore-2027.png' : 'assets/header-bookings-open.png',
+      headerFile: isDiverse ? 'header-explore-2027.png' : 'header-bookings-open.png',
+      headerAlt: isDiverse ? 'Musica Viva Australia — explore the 2027 education program' : 'Musica Viva Australia — 2027 bookings now open',
+      para1Pre,
+      para1Post,
+      para2,
+      isDiverse,
+      hasShows: !isDiverse,
+      showVideo: isPre,
+      isAssisted,
+      shows,
+      diverseSuggestion,
+      priceLine: isAssisted
+        ? 'Full price is $10.50 per student (minimum of 150 students per concert*).'
+        : '$10.50 per student (based on a minimum of 150 students*).',
+      pricingContactTail: isAssisted ? (', and contact ' + coordinatorContact + ' to discuss your school\u2019s needs.') : '.',
+      coordinatorContact,
+      officeLine: (STATE_CONTACT[stateCode] || {}).office || '',
+      // Plain text, no highlight: these lines are reference detail, not something to type over.
+      teamLines: (STATE_TEAM[stateCode] || []).concat([(STATE_CONTACT[stateCode] || {}).email || '']).filter(Boolean).map(text => ({
+        text,
+        bg: 'transparent',
+        fg: '#1A1A1A',
+        weight: '400',
+      })),
+      setRefEmail: (el) => { this._el = el; },
+      customNote: this.state.customNote || '',
+      setCustomNote: (e) => this.setState({ customNote: e.target.value }),
+      notePos: this.state.notePos || 'top',
+      setNotePos: (e) => this.setState({ notePos: e.target.value }),
+      noteTop: (this.state.notePos || 'top') === 'top' ? this.noteParas() : [],
+      noteBottom: this.state.notePos === 'bottom' ? this.noteParas() : [],
+      copyEmail: this.copyEmail,
+      downloadHtml: this.downloadHtml,
+
+      imgBaseStatus: (this.state.imgBase || '').trim()
+        ? 'Images will be written as ' + (this.state.imgBase || '').trim().replace(/\/+$/, '') + '/<file>.jpg when you copy or download.'
+        : 'Add the folder URL where these images are hosted, or the copied email will carry REPLACE-WITH-HOSTED-URL paths.',
+      copyLabel: this.state.copied ? 'Copied ✓' : 'Copy email',
+      toggleSource: this.toggleSource,
+      showSource: !!this.state.showSource,
+      sourceToggleLabel: this.state.showSource ? 'Hide HTML source' : 'Show HTML source',
+      sourceHtml: this.state.sourceHtml || '',
+      selectSource: this.selectSource,
+    };
+  }
+}
+</script>
+</body>
+</html>
